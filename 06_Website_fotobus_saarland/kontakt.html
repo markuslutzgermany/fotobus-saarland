@@ -43,8 +43,16 @@
     <!-- Formular -->
     <div>
       <h2>Anfrage-Formular</h2>
-      <!-- Hinweis: Formular-Action wird später per Formspree, Netlify Forms oder eigenem Endpunkt aktiviert -->
-      <form class="form-grid" action="https://formspree.io/f/PLACEHOLDER" method="POST">
+      <form class="form-grid" action="https://formspree.io/f/xojrndoj" method="POST">
+
+        <!-- Hidden-Felder für Formspree-Konfiguration -->
+        <input type="hidden" name="_subject" value="🚒 Neue Anfrage über fotobus.saarland">
+        <input type="hidden" name="_next" value="https://fotobus.saarland/danke.html">
+        <input type="hidden" name="_language" value="de">
+
+        <!-- Honeypot gegen Spam-Bots (unsichtbar für Menschen, nur Bots füllen es aus) -->
+        <input type="text" name="_gotcha" style="display:none !important" tabindex="-1" autocomplete="off">
+
         <div>
           <label for="name">Ihr Name *</label>
           <input type="text" id="name" name="name" required>
@@ -71,10 +79,26 @@
               <option>Hochzeit</option>
               <option>Firmenfeier</option>
               <option>Stadt- / Vereinsfest</option>
+              <option>Messe / B2B-Event</option>
               <option>Behörden / Tag der offenen Tür</option>
               <option>Privatfeier (Geburtstag o. Ä.)</option>
               <option>Anderes</option>
             </select>
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div>
+            <label for="paket">Gewünschtes Paket</label>
+            <select id="paket" name="paket">
+              <option value="">Bitte wählen (optional)</option>
+              <option>Eventabend (4h, 990 €)</option>
+              <option>Tagesevent (8h, 1.590 €)</option>
+              <option>Noch unsicher — bitte beraten</option>
+            </select>
+          </div>
+          <div>
+            <label for="gaeste">Anzahl Gäste (geschätzt)</label>
+            <input type="text" id="gaeste" name="gaeste" placeholder="z. B. 80–120">
           </div>
         </div>
         <div>
@@ -83,7 +107,7 @@
         </div>
         <div>
           <label for="message">Ihre Nachricht</label>
-          <textarea id="message" name="message" placeholder="Wie viele Gäste, gewünschte Stunden, besondere Wünsche?"></textarea>
+          <textarea id="message" name="message" placeholder="Besondere Wünsche, Espresso-Bar, LED-Beleuchtung, Fragen zur Logistik …"></textarea>
         </div>
         <div>
           <label style="font-weight: 400; font-size: 0.9rem;">
@@ -94,6 +118,9 @@
         <div>
           <button type="submit" class="btn btn-primary">Anfrage senden</button>
         </div>
+        <p style="font-size: 0.85rem; color: var(--grey); margin-top: 0.5rem;">
+          Mit Klick auf <em>Anfrage senden</em> wird Ihre Anfrage verschlüsselt an office@fotolutz.com übermittelt. Sie erhalten eine Antwort innerhalb von 24 Stunden.
+        </p>
       </form>
     </div>
 
