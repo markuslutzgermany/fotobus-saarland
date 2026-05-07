@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontakt &amp; Anfrage — Feuerwehr-Fotobus mieten | Fotobus Saarland</title>
+<meta name="description" content="Anfrage für den Feuerwehr-Fotobus stellen — Hochzeit, Firmenfeier, Stadtfest. Wir antworten innerhalb von 24 Stunden mit verbindlichem Angebot.">
+<link rel="canonical" href="https://fotobus.saarland/kontakt.html">
+<link rel="icon" type="image/png" href="/assets/img/favicon-source.png">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="/"><img src="/assets/img/logo.png" alt="Fotobus Saarland Logo" class="logo"></a>
+    <button class="nav-toggle" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    <nav class="site-nav">
+      <ul>
+        <li><a href="/">Start</a></li>
+        <li><a href="/der-bus.html">Der Bus</a></li>
+        <li><a href="/anlaesse.html">Anlässe</a></li>
+        <li><a href="/preise.html">Preise</a></li>
+        <li><a href="/kontakt.html" class="active">Kontakt</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<section style="padding: 4rem 0 2rem;">
+  <div class="container">
+    <div class="divider"></div>
+    <h1>Anfrage stellen</h1>
+    <p class="lead">Sagen Sie uns Datum, Ort und Anlass — wir antworten innerhalb von 24 Stunden mit Verfügbarkeit und verbindlichem Angebot.</p>
+  </div>
+</section>
+
+<section style="padding-top: 2rem;">
+  <div class="container" style="display: grid; grid-template-columns: 1fr; gap: 3rem;">
+
+    <!-- Formular -->
+    <div>
+      <h2>Anfrage-Formular</h2>
+      <!-- Hinweis: Formular-Action wird später per Formspree, Netlify Forms oder eigenem Endpunkt aktiviert -->
+      <form class="form-grid" action="https://formspree.io/f/PLACEHOLDER" method="POST">
+        <div>
+          <label for="name">Ihr Name *</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div>
+            <label for="email">E-Mail *</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="phone">Telefon (optional)</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+          <div>
+            <label for="event_date">Eventdatum *</label>
+            <input type="date" id="event_date" name="event_date" required>
+          </div>
+          <div>
+            <label for="anlass">Anlass *</label>
+            <select id="anlass" name="anlass" required>
+              <option value="">Bitte wählen</option>
+              <option>Hochzeit</option>
+              <option>Firmenfeier</option>
+              <option>Stadt- / Vereinsfest</option>
+              <option>Behörden / Tag der offenen Tür</option>
+              <option>Privatfeier (Geburtstag o. Ä.)</option>
+              <option>Anderes</option>
+            </select>
+          </div>
+        </div>
+        <div>
+          <label for="ort">Eventort (Ort &amp; PLZ) *</label>
+          <input type="text" id="ort" name="ort" placeholder="z. B. Saarbrücken, 66117" required>
+        </div>
+        <div>
+          <label for="message">Ihre Nachricht</label>
+          <textarea id="message" name="message" placeholder="Wie viele Gäste, gewünschte Stunden, besondere Wünsche?"></textarea>
+        </div>
+        <div>
+          <label style="font-weight: 400; font-size: 0.9rem;">
+            <input type="checkbox" name="dsgvo" required style="width: auto; margin-right: 0.5rem;">
+            Ich willige in die Verarbeitung meiner Daten gemäß <a href="/datenschutz.html">Datenschutzerklärung</a> ein. *
+          </label>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-primary">Anfrage senden</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Direkter Kontakt -->
+    <div class="contact-info">
+      <h3>Lieber direkt anrufen?</h3>
+      <p>Kein Problem — schreiben oder telefonieren Sie uns gerne direkt.</p>
+      <p style="margin-top: 1.5rem; font-size: 1.1rem;">
+        <strong>Markus Lutz</strong><br>
+        Fotolutz Complex GmbH
+      </p>
+      <p style="margin-top: 1rem;">
+        📍 Metzer Straße 158, 66117 Saarbrücken<br>
+        ✉️ <a href="mailto:office@fotolutz.com">office@fotolutz.com</a><br>
+        ☎️ <a href="tel:+4968100000000">+49 681 — XX XX XX XX</a> <em style="opacity:.7;">(Telefonnr. einfügen)</em>
+      </p>
+      <p style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.85;">
+        Wir antworten in der Regel innerhalb von 24 Stunden. An Eventtagen kann die Antwort etwas länger dauern.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div><h4>Fotobus Saarland</h4><p>Der Feuerwehr-Fotobus mit eingebauter Profi-Fotobox.</p></div>
+      <div><h4>Kontakt</h4><p>Fotolutz Complex GmbH<br>Metzer Straße 158<br>66117 Saarbrücken<br><a href="mailto:office@fotolutz.com">office@fotolutz.com</a></p></div>
+      <div><h4>Seiten</h4><p><a href="/">Start</a><br><a href="/der-bus.html">Der Bus</a><br><a href="/anlaesse.html">Anlässe</a><br><a href="/preise.html">Preise</a><br><a href="/kontakt.html">Kontakt</a></p></div>
+      <div><h4>Schwester-Marke</h4><p><a href="https://fotobox.saarland/">fotobox.saarland</a></p></div>
+    </div>
+    <div class="footer-bottom">© 2026 Fotolutz Complex GmbH · <a href="/impressum.html">Impressum</a> · <a href="/datenschutz.html">Datenschutz</a></div>
+  </div>
+</footer>
+<script src="/assets/js/main.js" defer></script>
+</body>
+</html>
