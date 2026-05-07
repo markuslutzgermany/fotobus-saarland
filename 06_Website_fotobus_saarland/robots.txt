@@ -1,4 +1,13 @@
+# robots.txt für fotobus.saarland
+# Crawler-Regeln für Suchmaschinen
+
 User-agent: *
 Allow: /
 
+# Seiten, die nicht indexiert werden sollen:
+Disallow: /danke.html
+Disallow: /impressum.html
+Disallow: /datenschutz.html
+
+# Sitemap-Verweis
 Sitemap: https://fotobus.saarland/sitemap.xml
