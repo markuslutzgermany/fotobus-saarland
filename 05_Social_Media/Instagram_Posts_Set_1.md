@@ -1,9 +1,9 @@
 # Instagram-Posts – Set 1 (Launch / Reveal)
-**Stand:** 07.05.2026
-**Account:** noch zu festlegen (z. B. @feuerwehr.fotobus oder @fotobus.saarland)
+**Stand:** Update 09.05.2026 (Branding & USPs ergänzt)
+**Account:** @fotobus.saarland (Empfehlung — passt zur Domain)
 **Ziel:** Soft Launch des neuen Fahrzeugs. Drei aufeinander abgestimmte Posts in Reihenfolge.
 
-> **Wichtiger Hinweis vor dem Posten:** Klär kurz, ob du den Markennamen schon endgültig hast. Aktuell habe ich neutrale Captions formuliert, die mit fast jedem Naming funktionieren. Sobald der Name steht, ergänzen wir gezielt Mentions und einen Profil-Hashtag (z. B. `#FeuerwehrFotobus`).
+> **Branding-Update:** Markenname steht jetzt fest: **Fotobus Saarland**. Domain ist live: fotobus.saarland. Profil-Hashtag: `#FotobusSaarland`. Wording: "Sofortprints" statt "Fotostreifen".
 
 ---
 
@@ -17,14 +17,16 @@
 
 > 🚒 **Es ist offiziell — das neue Schwergewicht ist da.**
 >
-> Seit ein paar Wochen rückt unser neues Feuerwehrauto im Saarland aus — nicht zum Löschen, sondern zum **Erinnerungen festhalten**. Eingebaute Fotobox, Glitzer-Vorhang, hunderte Requisiten und Platz für deine Crew.
+> Seit April 2026 rückt unser neues Mercedes-Feuerwehrauto im Saarland aus — nicht zum Löschen, sondern zum **Erinnerungen festhalten**. Eingebaute Profi-Fotobox, Glitzer-Vorhang, hunderte Requisiten und Platz für deine ganze Crew.
+>
+> Wir machen das Konzept **seit 2015** — heute mit dem deutlich größeren, imposanteren zweiten Bus. Und der ist bereits voll im Einsatz.
 >
 > Ob Hochzeit, Firmenfeier, Stadtfest oder Tag der offenen Tür: Der Bus ist der Hingucker, deine Gäste die Stars.
 >
-> 📍 Im Einsatz im gesamten Saarland & angrenzenden Regionen
-> 🔗 Anfragen über die Bio
+> 📍 Im Einsatz im gesamten Saarland & bis 200 km Umkreis
+> 🔗 Anfragen über die Bio · fotobus.saarland
 >
-> #FeuerwehrFotobus #FotoboxSaarland #Saarbrücken
+> #FotobusSaarland #FeuerwehrFotobus #FotoboxSaarland #Saarbrücken
 
 ### Hashtag-Set (am Caption-Ende oder im ersten Kommentar)
 
@@ -84,7 +86,7 @@ Frag aktiv nach „Was wäre euer perfektes Motiv?" — bringt Kommentare und da
 
 > 🎉 **Wenn die Sonne untergeht, dreht der Bus auf.**
 >
-> Lila Light, rotes Glitzern, drinnen lacht eure Crew ins Objektiv — und am Schluss hält jeder seinen eigenen Foto-Streifen in der Hand. **Erinnerungen zum Mitnehmen.**
+> Lila Light, rotes Glitzern, drinnen lacht eure Crew ins Objektiv — und am Schluss hält jeder seinen eigenen Sofortprint in der Hand. **Erinnerungen zum Mitnehmen.**
 >
 > Bereits gebuchte Termine 2026 verraten: Firmenfeiern und Hochzeiten lieben den Feuerwehrbus. Wer noch einen freien Slot will — schreibt uns. ⚡
 >
