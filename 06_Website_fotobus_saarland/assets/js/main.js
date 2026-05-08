@@ -83,7 +83,7 @@ function initWhatsAppButton() {
   if (document.querySelector('.whatsapp-float')) return;
 
   // Festnetznummer im internationalen Format ohne Leerzeichen/+ (für wa.me)
-  const phoneNumber = '4968103720122';
+  const phoneNumber = '496813720122';
   const message = encodeURIComponent('Hallo, ich interessiere mich für den Feuerwehr-Fotobus für mein Event. Datum: ');
   const link = `https://wa.me/${phoneNumber}?text=${message}`;
 
