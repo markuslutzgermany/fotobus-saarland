@@ -2,9 +2,9 @@
 
 ## Beschreibung — Google-freundliche Version (ca. 685 Zeichen) ✅
 
-Fotobus Saarland — Feuerwehr-Fotobus zum Mieten im Saarland, im Einsatz seit 2015. Wir vermieten ein originales Mercedes-Feuerwehrauto, innen komplett zur Profi-Fotobox umgebaut. Selbstbedienung in 5 Schritten, ausgedruckte Sofortprints in unter 30 Sekunden.
+Fotobus Saarland — Feuerwehr-Fotobus zum Mieten im Saarland, im Einsatz seit 2015. Wir vermieten ein originales Mercedes-Feuerwehrauto, innen komplett zur Profi-Fotobox umgebaut. Selbstbedienung in 5 Schritten, ausgedruckte Sofortprints in nur 12 Sekunden.
 
-Buchbar für Hochzeit, Firmenfeier, Stadtfest, Vereinsfest, Messe, B2B-Event und Tag der offenen Tür. Premium-Ausstattung: Stimmungs-LEDs, autarker Strom, Music-Sound-Modul, Glamour-Innenraum mit Glitzer-Vorhang und hunderten Foto-Requisiten.
+Buchbar für Hochzeit, Firmenfeier, Stadtfest, Vereinsfest, Messe, B2B-Event und Tag der offenen Tür. Premium-Ausstattung: Stimmungs-LEDs, autarker Strom, Music-Sound-Modul, Glamour-Innenraum mit Glitzer-Vorhang und einer Vielzahl an Foto-Requisiten.
 
 Servicegebiet: Saarbrücken, Saarlouis, Völklingen, Neunkirchen, Trier, Luxemburg, Kaiserslautern, Landau, Metz, Frankfurt, Mainz, Wiesbaden, Karlsruhe — bis 200 km Umkreis.
 
