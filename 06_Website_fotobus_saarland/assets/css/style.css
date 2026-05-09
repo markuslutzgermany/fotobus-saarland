@@ -3,6 +3,77 @@
    Marke: Rot + Anthrazit + Weiss, klare Typo, Mobile-first
    ============================================================== */
 
+/* ----- FAQ Akkordeon ----- */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+.faq-item {
+  background: var(--white);
+  border: 1px solid #E5E5E5;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+.faq-item[open] {
+  border-color: var(--red);
+  box-shadow: 0 2px 12px rgba(227, 6, 19, 0.08);
+}
+.faq-item summary {
+  padding: 1.1rem 1.5rem;
+  font-weight: 700;
+  font-size: 1.05rem;
+  cursor: pointer;
+  list-style: none;
+  position: relative;
+  padding-right: 3rem;
+  user-select: none;
+  color: var(--dark);
+  transition: color 0.2s ease;
+}
+.faq-item summary:hover {
+  color: var(--red);
+}
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--red);
+  transition: transform 0.2s ease;
+  line-height: 1;
+}
+.faq-item[open] summary::after {
+  content: "−";
+  transform: translateY(-50%) rotate(0deg);
+}
+.faq-answer {
+  padding: 0 1.5rem 1.25rem;
+  color: var(--grey);
+  line-height: 1.7;
+}
+.faq-answer p:not(:last-child) {
+  margin-bottom: 0.75rem;
+}
+.faq-answer ul {
+  margin: 0.5rem 0 0.75rem 1.5rem;
+}
+.faq-answer ul li {
+  margin-bottom: 0.25rem;
+}
+.faq-answer a {
+  color: var(--red);
+  text-decoration: underline;
+}
+
 /* ----- WhatsApp Floating Button (auf allen Seiten via main.js injiziert) ----- */
 .whatsapp-float {
   position: fixed;
