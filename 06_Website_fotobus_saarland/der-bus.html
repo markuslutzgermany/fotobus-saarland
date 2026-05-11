@@ -30,6 +30,11 @@
 <meta name="twitter:description" content="Mercedes-Feuerwehrauto, innen ausgebaut zur autarken Profi-Fotobox: eingebaute Profi-Kamera, Touch-Bildschirm, Sofortprints, LED-Stimmungsbeleuchtung. Bis zu 12 Personen pro Foto.">
 <meta name="twitter:image" content="https://fotobus.saarland/assets/img/og-default.jpg">
 
+
+<!-- Hero-Bild preloaden (LCP-Optimierung) -->
+<link rel="preload" as="image" href="/assets/img/bus-01-1600.jpg" imagesrcset="/assets/img/bus-01-1600.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/img/bus-01-1600.jpg">
+
 <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
@@ -64,7 +69,7 @@
 
 <section style="padding: 1rem 0 4rem;">
   <div class="container">
-    <img src="/assets/img/bus-01-1600.jpg" alt="Feuerwehr-Fotobus von außen — roter Mercedes mit Aufschrift FEUERWEHR" style="border-radius: 8px; box-shadow: var(--shadow-lg);">
+    <picture><source srcset="/assets/img/bus-01-1600.webp" type="image/webp"><img src="/assets/img/bus-01-1600.jpg" alt="Feuerwehr-Fotobus von außen — roter Mercedes mit Aufschrift FEUERWEHR" style="border-radius: 8px; box-shadow: var(--shadow-lg);"></picture>
   </div>
 </section>
 
@@ -75,6 +80,18 @@
       <p>Wir haben das Konzept Feuerwehrauto + eingebaute Fotobox <strong>2015 zum ersten Mal ins Saarland gebracht</strong> — lange bevor andere Anbieter auf die Idee kamen. Über 10 Jahre Erfahrung, hunderte Events, hunderttausende Sofortprints.</p>
       <p>Im April 2026 ist nun das neue, deutlich <strong>größere und imposantere Fahrzeug</strong> dazugekommen: ein original Mercedes-Löschfahrzeug, komplett umgebaut zu einer mobilen Profi-Fotobox.</p>
       <p>Außen klassisches Feuerwehr-Rot mit Originalaufschrift „FEUERWEHR · Feuer/Notfall 112" — innen alles, was es für die perfekte Fotobox-Erfahrung braucht. Pionier-Konzept, Premium-Ausstattung.</p>
+
+      <!-- 🎬 Throwback: Karneval 2017 mit dem ersten Bus -->
+      <div style="margin-top: 2.5rem; padding: 1.5rem; background: white; border-radius: 8px; border-left: 4px solid var(--red); box-shadow: var(--shadow-md);">
+        <p style="margin: 0 0 1rem; font-weight: 800; color: var(--red); text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.85rem;">📅 Beweis-Footage · Karneval 2017</p>
+        <video controls preload="metadata" poster="/assets/img/karneval-2015-poster-1600.jpg" style="width: 100%; border-radius: 6px; display: block; margin-bottom: 1rem; background: black; aspect-ratio: 16/9; object-fit: cover;">
+          <source src="/assets/video/karneval-2015.mp4" type="video/mp4">
+          Ihr Browser unterstützt kein HTML5-Video. <a href="/assets/video/karneval-2015.mp4">Video direkt herunterladen</a>.
+        </video>
+        <p style="margin: 0; font-size: 0.95rem; color: var(--grey); font-style: italic;">
+          Saarbrücker Karneval 2017 mit dem <strong style="color: var(--dark);">ersten Feuerwehr-Fotobus</strong>. Funkenmariechen, Garde, Hippies, Bienen — alle in den Bus, posieren, lachen, Sofortprint mitnehmen. 10 Jahre später: neuer Mercedes, gleiches Konzept. Wir sind das Original.
+        </p>
+      </div>
     </div>
   </div>
 </section>
@@ -89,28 +106,28 @@
 
     <div class="card-grid">
       <div class="card">
-        <img src="/assets/img/bus-02-800.jpg" alt="Profi-Fotostation mit Bildschirm und Drucker">
+        <picture><source srcset="/assets/img/bus-02-800.webp" type="image/webp"><img src="/assets/img/bus-02-800.jpg" alt="Profi-Fotostation mit Bildschirm und Drucker" loading="lazy"></picture>
         <div class="card-body">
           <h3>Fotostation</h3>
           <p>Eingebaute Profi-Kamera, Touch-Bildschirm, Sofort-Drucker. Ihre Gäste bedienen sich selbst — Anleitung vor dem Bus, in 4 Schritten erklärt.</p>
         </div>
       </div>
       <div class="card">
-        <img src="/assets/img/bus-03-800.jpg" alt="Glitzer-Vorhang als Foto-Hintergrund im Bus-Innenraum">
+        <picture><source srcset="/assets/img/bus-03-800.webp" type="image/webp"><img src="/assets/img/bus-03-800.jpg" alt="Glitzer-Vorhang als Foto-Hintergrund im Bus-Innenraum" loading="lazy"></picture>
         <div class="card-body">
           <h3>Hintergrund &amp; Platz</h3>
           <p>Silber-roter Glitzer-Vorhang als Foto-Hintergrund. Im Bus haben <strong>gemütlich 5–6 Personen</strong> zeitgleich Platz für ein entspanntes Bild. Wenn's mehr werden soll, wird es echt kuschelig mit <strong>bis zu 12 Personen</strong>. 🤗</p>
         </div>
       </div>
       <div class="card">
-        <img src="/assets/img/event-02-led-teppich-800.jpg" alt="Feuerwehr-Fotobus mit roter Teppich-Empfang und farbiger LED-Bar am Boden — Stimmungsbeleuchtung im Einsatz">
+        <picture><source srcset="/assets/img/event-02-led-teppich-800.webp" type="image/webp"><img src="/assets/img/event-02-led-teppich-800.jpg" alt="Feuerwehr-Fotobus mit roter Teppich-Empfang und farbiger LED-Bar am Boden — Stimmungsbeleuchtung im Einsatz" loading="lazy"></picture>
         <div class="card-body">
           <h3>Stimmungs-Beleuchtung</h3>
           <p>LED-Beleuchtung innen und außen: <strong>RGB-Innenraum</strong> für die Atmosphäre im Bus, <strong>farbige LED-Bar am Boden</strong> für den Wow-Effekt beim Empfang. Anpassbar von dezent-warm zur Hochzeit bis Party-Mode für die Firmenfeier.</p>
         </div>
       </div>
       <div class="card">
-        <img src="/assets/img/bus-05-800.jpg" alt="Geöffnete Bus-Tür mit Lichtstimmung">
+        <picture><source srcset="/assets/img/bus-05-800.webp" type="image/webp"><img src="/assets/img/bus-05-800.jpg" alt="Geöffnete Bus-Tür mit Lichtstimmung" loading="lazy"></picture>
         <div class="card-body">
           <h3>Requisiten-Schatz</h3>
           <p>Eine Vielzahl an Foto-Requisiten und Schildern zur Auswahl: Hüte, Sprechblasen, Themen-Sets — vom Hochzeitsmotto bis zur Firmen-Botschaft.</p>
@@ -231,10 +248,10 @@
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 2rem; margin: 2rem 0;">
       <div>
-        <img src="/assets/img/werbeflaeche-links-1600.jpg" alt="Werbefläche linke Bus-Seite — 1,28 m × 1,28 m für Ihr Logo, Ihre Werbung oder Kampagnen-Motive" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);">
+        <picture><source srcset="/assets/img/werbeflaeche-links-1600.webp" type="image/webp"><img src="/assets/img/werbeflaeche-links-1600.jpg" alt="Werbefläche linke Bus-Seite — 1,28 m × 1,28 m für Ihr Logo, Ihre Werbung oder Kampagnen-Motive" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);" loading="lazy"></picture>
       </div>
       <div>
-        <img src="/assets/img/werbeflaeche-rechts-1600.jpg" alt="Werbefläche rechte Bus-Seite — Logo-Platzierung gegenüber dem Empfangsbereich mit rotem Teppich" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);">
+        <picture><source srcset="/assets/img/werbeflaeche-rechts-1600.webp" type="image/webp"><img src="/assets/img/werbeflaeche-rechts-1600.jpg" alt="Werbefläche rechte Bus-Seite — Logo-Platzierung gegenüber dem Empfangsbereich mit rotem Teppich" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);" loading="lazy"></picture>
       </div>
     </div>
 
@@ -257,7 +274,7 @@
     <div style="margin-top: 3rem; padding-top: 3rem; border-top: 1px solid #E5E5E5;">
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 2.5rem; align-items: center;">
         <div>
-          <img src="/assets/img/vip-empfang-detail-1600.jpg" alt="Silbernes Absperrsystem mit Stanchions, schwarzen Seilen und rotem Teppich am Feuerwehr-Fotobus — Premium-Empfang in der Blue Hour" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);">
+          <picture><source srcset="/assets/img/vip-empfang-detail-1600.webp" type="image/webp"><img src="/assets/img/vip-empfang-detail-1600.jpg" alt="Silbernes Absperrsystem mit Stanchions, schwarzen Seilen und rotem Teppich am Feuerwehr-Fotobus — Premium-Empfang in der Blue Hour" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);" loading="lazy"></picture>
         </div>
         <div>
           <h3 style="color: var(--red); margin-bottom: 1rem;">🪢 Silbernes Absperrsystem — in jedem Paket inklusive</h3>

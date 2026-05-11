@@ -1,0 +1,37 @@
+# macOS-Müllfiles
+.DS_Store
+**/.DS_Store
+._*
+
+# Python-Cache
+__pycache__/
+*.pyc
+*.pyo
+
+# IDE
+.vscode/
+.idea/
+
+# Lokale Build-Artefakte
+*.tmp
+*.bak
+node_modules/
+
+# Swift-Build (BusFaceBlur)
+_swift_face_blur/.build/
+_swift_face_blur/build/
+DerivedData/
+
+# Lokale Test-Outputs
+test_outputs/
+
+# Event-Rohdaten lokal halten — zu groß für GitHub
+08_Events_Referenzen/**/01_Roh/
+08_Events_Referenzen/**/02_Bearbeitet/
+08_Events_Referenzen/*.mp4
+08_Events_Referenzen/*.MP4
+08_Events_Referenzen/*.MOV
+08_Events_Referenzen/*.mov
+08_Events_Referenzen/*.HEIC
+08_Events_Referenzen/*.jpg
+08_Events_Referenzen/*.JPG

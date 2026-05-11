@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Anlässe — Hochzeit, Firmenfest, Stadtfest, Behörden | Fotobus Saarland</title>
-<meta name="description" content="Der Feuerwehr-Fotobus passt zu jedem Anlass: Hochzeiten, Firmenfeiern, Messen, Stadt- und Vereinsfeste, Tag der offenen Tür bei Behörden im Saarland.">
+<meta name="description" content="Der Feuerwehr-Fotobus passt zu jedem Anlass: Hochzeiten, Firmenfeiern, Mitarbeiterveranstaltungen, Messen, Tag der offenen Tür, Stadt- und Vereinsfeste, Behörden im Saarland und DACH.">
 <link rel="canonical" href="https://fotobus.saarland/anlaesse.html">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon-16x16.png">
@@ -30,7 +30,58 @@
 <meta name="twitter:description" content="Für welche Events der Feuerwehr-Fotobus genau richtig ist: Hochzeiten, Firmenfeiern, Mitarbeiterveranstaltungen, Stadtfeste, Behörden, Vereinsfeste und Tag-der-offenen-Tür im Saarland und DACH.">
 <meta name="twitter:image" content="https://fotobus.saarland/assets/img/og-default.jpg">
 
+
+<!-- Hero-Bild preloaden (LCP-Optimierung) -->
+<link rel="preload" as="image" href="/assets/img/event-01-gaeste-1600.jpg" imagesrcset="/assets/img/event-01-gaeste-1600.webp" type="image/webp">
+<link rel="preload" as="image" href="/assets/img/event-01-gaeste-1600.jpg">
+
 <link rel="stylesheet" href="/assets/css/style.css">
+
+<style>
+  /* Anlässe-Seite: zweispaltige Sektionen mit alternierendem Layout */
+  .anlass-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin: 1rem 0 2rem;
+  }
+  @media (min-width: 768px) {
+    .anlass-row { grid-template-columns: 1fr 1fr; gap: 3rem; }
+    .anlass-row.reverse > :nth-child(1) { order: 2; }
+    .anlass-row.reverse > :nth-child(2) { order: 1; }
+  }
+  .anlass-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--shadow-lg);
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 4/3;
+  }
+  .anlass-row h2 { margin-top: 0; }
+  .anlass-row ul { margin: 1rem 0 1.25rem 1.5rem; color: var(--grey); }
+  .anlass-row ul li { margin-bottom: 0.5rem; }
+  .testimonial-mini {
+    margin: 1.5rem 0;
+    padding: 1.25rem 1.5rem;
+    background: var(--light);
+    border-left: 4px solid var(--red);
+    border-radius: 4px;
+  }
+  .testimonial-mini .stars { color: #FFB400; letter-spacing: 0.05em; font-size: 0.95rem; }
+  .testimonial-mini blockquote { margin: 0.5rem 0; font-style: italic; color: var(--dark); }
+  .testimonial-mini .name { font-weight: 700; font-size: 0.9rem; color: var(--dark); margin-top: 0.5rem; }
+  .testimonial-mini .role { font-size: 0.85rem; color: var(--grey); }
+  .hero-anlaesse {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: var(--shadow-lg);
+    object-fit: cover;
+    aspect-ratio: 16/7;
+    display: block;
+  }
+</style>
 </head>
 <body>
 
@@ -53,7 +104,8 @@
   </div>
 </header>
 
-<section style="padding: 4rem 0 2rem;">
+<!-- HERO -->
+<section style="padding: 4rem 0 1.5rem;">
   <div class="container">
     <div class="divider"></div>
     <h1>Für jeden Anlass der richtige Bus</h1>
@@ -61,92 +113,196 @@
   </div>
 </section>
 
-<section id="hochzeit" style="padding-top: 2rem;">
+<section style="padding: 0 0 2rem;">
   <div class="container">
-    <h2>💍 Hochzeit</h2>
-    <div class="divider"></div>
-    <p>Ihr Hochzeitstag — und der Feuerwehr-Bus rollt vor das Festgelände. Garantierter Wow-Effekt beim Empfang, anhaltende Schlange am Bus über den ganzen Abend, Sofortprints, die Jahre später noch im Bilderrahmen stehen.</p>
-    <ul style="margin: 1rem 0 1rem 1.5rem; color: var(--grey);">
-      <li>Selbstbedienung — Sie müssen sich um nichts kümmern</li>
-      <li>Sofortprints mit individuellem Hochzeitsdatum-Branding möglich</li>
-      <li>Aufstellung vor der Location oder im Außenbereich</li>
-      <li>Beliebt bei Junggesellenabschieden im Anschluss</li>
-    </ul>
-    <a href="/kontakt.html" class="btn btn-primary">Hochzeit anfragen</a>
+    <picture>
+      <source srcset="/assets/img/event-01-gaeste-1600.webp" type="image/webp">
+      <img src="/assets/img/event-01-gaeste-1600.jpg" alt="Gäste am Feuerwehr-Fotobus auf einem Premium-Event mit rotem Teppich und LED-Beleuchtung" class="hero-anlaesse">
+    </picture>
   </div>
 </section>
 
-<section id="firma" class="section-light">
-  <div class="container">
-    <h2>🏢 Firmenfeier</h2>
-    <div class="divider"></div>
-    <p>Sommerfest, Weihnachtsfeier, Jubiläum, Mitarbeiter-Event — der Fotobus bringt Atmosphäre und liefert Bilder, die teamintern noch lange kursieren. Perfekt für Employer Branding und LinkedIn.</p>
-    <ul style="margin: 1rem 0 1rem 1.5rem; color: var(--grey);">
-      <li>Branding der Sofortprints mit Firmenlogo möglich</li>
-      <li>Beleuchtung passend zur Corporate Identity</li>
-      <li>Auch in Innenhöfen oder Industrie-Locations einsetzbar</li>
-      <li>Ideal als Eyecatcher bei Kunden- &amp; Partner-Events</li>
-    </ul>
-    <a href="/kontakt.html" class="btn btn-primary">Firmenevent anfragen</a>
-  </div>
-</section>
-
-<section id="messen">
-  <div class="container">
-    <h2>🤝 Messen &amp; B2B-Events</h2>
-    <div class="divider"></div>
-    <p>Auf Messen ist Aufmerksamkeit knapp und teuer. Ein <strong>roter Feuerwehr-Mercedes mit Profi-Fotobox</strong> sticht garantiert aus jeder Halle heraus. Besucher fotografieren sich, posten sofort auf Social Media, taggen den Aussteller — Ihr Stand wird zum <strong>Brand-Eyecatcher und UGC-Generator</strong> in einem.</p>
-    <ul style="margin: 1rem 0 1rem 1.5rem; color: var(--grey);">
-      <li>Sofortprints mit Aussteller-Logo, Stand-Nr. und Hashtag-Branding</li>
-      <li>Greenscreen-Option: Besucher posieren vor Ihrem Markenmotiv oder Produkt</li>
-      <li>Social-Media-Sharing direkt aus dem Bus — sofortige Reichweite</li>
-      <li>Mehrtages-Pakete für komplette Messelaufzeit verfügbar</li>
-      <li>Aufstellung in Halle (Indoor-tauglich) oder Außenbereich</li>
-      <li>Schlangen-Effekt: zieht Besucher gezielt zu Ihrem Stand</li>
-      <li>Eigene Stromversorgung — flexibel auch in entfernten Hallen</li>
-    </ul>
-    <p style="margin-top: 1rem; padding: 1rem 1.25rem; background: var(--light); border-left: 4px solid var(--red); border-radius: 4px;">
-      <strong>Aussteller-Tipp:</strong> Jeder Besucher, der ein Foto mitnimmt und postet, wird zu Ihrem Werbeträger. Bei 200 Besuchern am Stand × 3 Personen pro Foto × jeder ein Insta-Story = <strong>600 organische Brand-Impressionen</strong> — kostenlos, authentisch, viral.
-    </p>
-
-    <div style="margin-top: 1.5rem;">
-      <img src="/assets/img/werbeflaeche-rechts-1600.jpg" alt="Werbefläche am Bus — 1,28 m × 1,28 m für Aussteller-Logo, Stand-Nummer oder Hashtag-Branding" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md); margin-bottom: 1rem;">
-      <p style="font-size: 0.95rem; color: var(--grey); text-align: center;">
-        Werbefläche am Bus: 2 × ca. 1,28 m × 1,28 m für Aussteller-Logo &amp; Hashtag-Branding · <a href="/der-bus.html#werbeflaeche">Mehr zum Branding-Paket →</a>
-      </p>
+<!-- Quick-Nav für Anker-Sprünge -->
+<section style="padding: 0.5rem 0 2rem; border-bottom: 1px solid #eee;">
+  <div class="container" style="text-align: center;">
+    <p style="font-size: 0.9rem; color: var(--grey); margin-bottom: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; font-weight: 700;">Direkt zum Anlass:</p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.5rem 1rem;">
+      <a href="#hochzeit" style="color: var(--red); text-decoration: none; font-weight: 600;">💍 Hochzeit</a>
+      <a href="#firma" style="color: var(--red); text-decoration: none; font-weight: 600;">🏢 Firmenfeier</a>
+      <a href="#offene-tuer" style="color: var(--red); text-decoration: none; font-weight: 600;">🎉 Tag der offenen Tür</a>
+      <a href="#messen" style="color: var(--red); text-decoration: none; font-weight: 600;">🤝 Messen</a>
+      <a href="#stadtfest" style="color: var(--red); text-decoration: none; font-weight: 600;">🎪 Stadtfest</a>
+      <a href="#behoerden" style="color: var(--red); text-decoration: none; font-weight: 600;">🚒 Behörden</a>
     </div>
-
-    <a href="/kontakt.html" class="btn btn-primary">Messe-Auftritt anfragen</a>
   </div>
 </section>
 
-<section id="stadtfest" class="section-light">
+<!-- 💍 HOCHZEIT -->
+<section id="hochzeit" style="padding: 3rem 0;">
   <div class="container">
-    <h2>🎪 Stadt- und Vereinsfeste</h2>
-    <div class="divider"></div>
-    <p>Magnet im Festzelt-Bereich — der Bus zieht Aufmerksamkeit, sorgt für Schlangen-Effekt und positive Mundpropaganda. Vereine nutzen die Sofortprints als Werbeträger oder Spendenanlass.</p>
-    <ul style="margin: 1rem 0 1rem 1.5rem; color: var(--grey);">
-      <li>Stark frequentiert — viele Fotos in kurzer Zeit kein Problem</li>
-      <li>Mehrtages-Buchung mit Pauschal-Tarif möglich</li>
-      <li>Sofortprints mit Vereins- oder Stadtlogo-Branding</li>
-      <li>Sponsoring-Möglichkeit für lokale Unternehmen</li>
-    </ul>
-    <a href="/kontakt.html" class="btn btn-primary">Stadtfest anfragen</a>
+    <div class="anlass-row">
+      <picture>
+        <source srcset="/assets/img/event-05-roter-teppich-1600.webp" type="image/webp">
+        <img src="/assets/img/event-05-roter-teppich-1600.jpg" alt="Roter Teppich vor dem Feuerwehr-Fotobus — Premium-Empfang für Hochzeitsgäste" class="anlass-image" loading="lazy">
+      </picture>
+      <div>
+        <h2>💍 Hochzeit</h2>
+        <div class="divider"></div>
+        <p>Ihr Hochzeitstag — und der Feuerwehr-Bus rollt vor das Festgelände. Garantierter Wow-Effekt beim Empfang, anhaltende Schlange am Bus über den ganzen Abend, Sofortprints, die Jahre später noch im Bilderrahmen stehen.</p>
+        <ul>
+          <li>Selbstbedienung — Sie müssen sich um nichts kümmern</li>
+          <li>Sofortprints mit individuellem Hochzeitsdatum-Branding möglich</li>
+          <li>Roter Teppich, Stanchions &amp; LED-Beleuchtung sorgen für Premium-Empfang</li>
+          <li>Bis zu <strong>12 Personen</strong> passen ins Foto — perfekt für Familienportraits</li>
+          <li>Beliebt bei Junggesellenabschieden im Anschluss</li>
+        </ul>
+        <a href="/kontakt.html" class="btn btn-primary">Hochzeit anfragen</a>
+      </div>
+    </div>
   </div>
 </section>
 
-<section id="behoerden">
+<!-- 🏢 FIRMENFEIER -->
+<section id="firma" class="section-light" style="padding: 3rem 0;">
   <div class="container">
-    <h2>🚒 Behörden &amp; Kommunen</h2>
-    <div class="divider"></div>
-    <p>Tag der offenen Tür bei Polizei, Feuerwehr, THW oder Stadtverwaltung — der Bus passt visuell perfekt und schafft positive Begegnungen. Bürger nehmen ein Foto mit nach Hause und behalten den Termin in Erinnerung.</p>
-    <ul style="margin: 1rem 0 1rem 1.5rem; color: var(--grey);">
-      <li>Ideale Optik für Sicherheits-, Aktions- und Bürger­tage</li>
-      <li>Sofortprints mit Stadtwappen oder Behörden-Logo</li>
-      <li>Rechnungsstellung an die Stadtkasse / öffentliche Träger</li>
-      <li>Auch für Schul- und Kindergarten-Aktionen geeignet</li>
-    </ul>
-    <a href="/kontakt.html" class="btn btn-primary">Behörden-Event anfragen</a>
+    <div class="anlass-row reverse">
+      <picture>
+        <source srcset="/assets/img/event-06-vip-empfang-1600.webp" type="image/webp">
+        <img src="/assets/img/event-06-vip-empfang-1600.jpg" alt="VIP-Empfang am Feuerwehr-Fotobus bei einer Mitarbeiterveranstaltung der Deutschen Bank Saarbrücken" class="anlass-image" loading="lazy">
+      </picture>
+      <div>
+        <h2>🏢 Firmenfeier &amp; Mitarbeiter-Events</h2>
+        <div class="divider"></div>
+        <p>Sommerfest, Weihnachtsfeier, Jubiläum, Mitarbeiter-Event — der Fotobus bringt Atmosphäre und liefert Bilder, die teamintern noch lange kursieren. Perfekt für Employer Branding und LinkedIn.</p>
+        <ul>
+          <li>Branding der Sofortprints mit Firmenlogo möglich</li>
+          <li>Beleuchtung passend zur Corporate Identity</li>
+          <li>Auch in Innenhöfen oder Industrie-Locations einsetzbar</li>
+          <li>Ideal als Eyecatcher bei Kunden- &amp; Partner-Events</li>
+          <li>Rechnungsstellung an Firma — keine Anzahlung erforderlich</li>
+        </ul>
+        <div class="testimonial-mini">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Wir hatten eine Mitarbeiterveranstaltung mit dem Fotobus von Herrn Lutz. Wir wurden bestens betreut und hatten sehr viel Spaß mit den Bildern und dem Bus. Mit Partylichtern, Musik und einem roten Teppich dekoriert — es hat sehr viel Spaß gemacht."</blockquote>
+          <div class="name">Antje Löwenbrück</div>
+          <div class="role">Filialdirektorin, Deutsche Bank Saarbrücken · 100 Gäste · 391 Sofortprints in 3 h</div>
+        </div>
+        <a href="/kontakt.html" class="btn btn-primary">Firmenevent anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🎉 TAG DER OFFENEN TÜR -->
+<section id="offene-tuer" style="padding: 3rem 0;">
+  <div class="container">
+    <div class="anlass-row">
+      <picture>
+        <source srcset="/assets/img/event-04-moebel-ehrmann-1600.webp" type="image/webp">
+        <img src="/assets/img/event-04-moebel-ehrmann-1600.jpg" alt="Tag der offenen Tür bei Möbel Ehrmann — Familien strömen zum Feuerwehr-Fotobus" class="anlass-image" loading="lazy">
+      </picture>
+      <div>
+        <h2>🎉 Tag der offenen Tür</h2>
+        <div class="divider"></div>
+        <p>Ob Möbelhaus, Autohaus, Maklerbüro oder Werks-Open-Day — der Bus ist der absolute Eye-Catcher und zieht Besucher gezielt an Ihren Eingang. Familien bleiben länger, Kinder sind begeistert, Sofortprints werden zu wandernden Werbe­trägern.</p>
+        <ul>
+          <li>Magnet-Effekt: Bus zieht Laufkundschaft direkt an</li>
+          <li>Familien-Event-tauglich — auch ältere Generation traut sich rein</li>
+          <li>Sofortprints mit Firmen-Logo &amp; Event-Datum als Erinnerung</li>
+          <li>Schon ab dem Aufbau Aufmerksamkeit, noch bevor das Event startet</li>
+          <li>Wiederbuchungs-Empfehlung von Stammkunden ★★★★★</li>
+        </ul>
+        <div class="testimonial-mini">
+          <div class="stars">★★★★★</div>
+          <blockquote>„Das absolute Highlight beim Tag der offenen Tür war in diesem Jahr die Fotobox im Feuerwehrauto von Foto Lutz. Das Feuerwehrauto ist ein absoluter Eye Catcher. Die Geschwindigkeit beim Ausdrucken und die Qualität der Fotos sind perfekt. Für unsere nächsten Events ist das Feuerwehrauto wieder eingeplant."</blockquote>
+          <div class="name">Bernd Niemeyer</div>
+          <div class="role">Leiter Marketing, Ehrmann Wohn- und Einrichtungs GmbH</div>
+        </div>
+        <a href="/kontakt.html" class="btn btn-primary">Tag der offenen Tür anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🤝 MESSEN -->
+<section id="messen" class="section-light" style="padding: 3rem 0;">
+  <div class="container">
+    <div class="anlass-row reverse">
+      <picture>
+        <source srcset="/assets/img/werbeflaeche-rechts-1600.webp" type="image/webp">
+        <img src="/assets/img/werbeflaeche-rechts-1600.jpg" alt="Werbefläche am Bus — 1,28 m × 1,28 m für Aussteller-Logo, Stand-Nummer oder Hashtag-Branding" class="anlass-image" loading="lazy">
+      </picture>
+      <div>
+        <h2>🤝 Messen &amp; B2B-Events</h2>
+        <div class="divider"></div>
+        <p>Auf Messen ist Aufmerksamkeit knapp und teuer. Ein <strong>roter Feuerwehr-Mercedes mit Profi-Fotobox</strong> sticht garantiert aus jeder Halle heraus. Besucher fotografieren sich, posten sofort auf Social Media, taggen den Aussteller — Ihr Stand wird zum <strong>Brand-Eyecatcher und UGC-Generator</strong> in einem.</p>
+        <ul>
+          <li>Sofortprints mit Aussteller-Logo, Stand-Nr. und Hashtag-Branding</li>
+          <li>Greenscreen-Option: Besucher posieren vor Ihrem Markenmotiv</li>
+          <li>Social-Media-Sharing direkt aus dem Bus — sofortige Reichweite</li>
+          <li>Mehrtages-Pakete für komplette Messelaufzeit verfügbar</li>
+          <li>Aufstellung in Halle (Indoor-tauglich) oder Außenbereich</li>
+          <li>Eigene Stromversorgung — flexibel auch in entfernten Hallen</li>
+        </ul>
+        <p style="margin-top: 1rem; padding: 1rem 1.25rem; background: white; border-left: 4px solid var(--red); border-radius: 4px;">
+          <strong>Aussteller-Tipp:</strong> 200 Besucher × 3 Personen pro Foto × jeder ein Insta-Story = <strong>600 organische Brand-Impressionen</strong> — kostenlos, authentisch, viral.
+        </p>
+        <p style="font-size: 0.9rem; color: var(--grey); margin-top: 0.75rem;">
+          Werbefläche am Bus: 2 × ca. 1,28 m × 1,28 m · <a href="/der-bus.html#werbeflaeche">Mehr zum Branding-Paket →</a>
+        </p>
+        <a href="/kontakt.html" class="btn btn-primary" style="margin-top: 1rem;">Messe-Auftritt anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🎪 STADTFEST -->
+<section id="stadtfest" style="padding: 3rem 0;">
+  <div class="container">
+    <div class="anlass-row">
+      <picture>
+        <source srcset="/assets/img/event-02-led-teppich-1600.webp" type="image/webp">
+        <img src="/assets/img/event-02-led-teppich-1600.jpg" alt="Feuerwehr-Fotobus mit LED-Lichtleiste und rotem Teppich bei einer Abend-Veranstaltung" class="anlass-image" loading="lazy">
+      </picture>
+      <div>
+        <h2>🎪 Stadt- und Vereinsfeste</h2>
+        <div class="divider"></div>
+        <p>Magnet im Festzelt-Bereich — der Bus zieht Aufmerksamkeit, sorgt für Schlangen-Effekt und positive Mundpropaganda. Vereine nutzen die Sofortprints als Werbeträger oder Spendenanlass.</p>
+        <ul>
+          <li>Stark frequentiert — viele Fotos in kurzer Zeit kein Problem (600+ pro Tag möglich)</li>
+          <li>Mehrtages-Buchung mit Pauschal-Tarif möglich</li>
+          <li>Sofortprints mit Vereins- oder Stadtlogo-Branding</li>
+          <li>Sponsoring-Möglichkeit für lokale Unternehmen</li>
+          <li>Autarke Stromversorgung — funktioniert auch ohne Stecker am Festplatz</li>
+        </ul>
+        <a href="/kontakt.html" class="btn btn-primary">Stadtfest anfragen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🚒 BEHÖRDEN -->
+<section id="behoerden" class="section-light" style="padding: 3rem 0;">
+  <div class="container">
+    <div class="anlass-row reverse">
+      <picture>
+        <source srcset="/assets/img/event-03-empfang-1600.webp" type="image/webp">
+        <img src="/assets/img/event-03-empfang-1600.jpg" alt="Empfangs-Situation am Feuerwehr-Fotobus — passt visuell perfekt zu Tag der offenen Tür bei Polizei, Feuerwehr und Stadtverwaltung" class="anlass-image" loading="lazy">
+      </picture>
+      <div>
+        <h2>🚒 Behörden &amp; Kommunen</h2>
+        <div class="divider"></div>
+        <p>Tag der offenen Tür bei Polizei, Feuerwehr, THW oder Stadtverwaltung — der Bus passt visuell perfekt und schafft positive Begegnungen. Bürger nehmen ein Foto mit nach Hause und behalten den Termin in Erinnerung.</p>
+        <ul>
+          <li>Ideale Optik für Sicherheits-, Aktions- und Bürger­tage</li>
+          <li>Sofortprints mit Stadtwappen oder Behörden-Logo</li>
+          <li>Rechnungsstellung an die Stadtkasse / öffentliche Träger</li>
+          <li>Keine Anzahlung erforderlich (für öffentliche Träger)</li>
+          <li>Auch für Schul- und Kindergarten-Aktionen geeignet</li>
+        </ul>
+        <a href="/kontakt.html" class="btn btn-primary">Behörden-Event anfragen</a>
+      </div>
+    </div>
   </div>
 </section>
 
