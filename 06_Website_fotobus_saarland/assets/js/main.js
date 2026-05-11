@@ -78,6 +78,52 @@ function initFormspreeForm() {
   });
 }
 
+// Cookie-Hinweis-Banner — zeigt sich beim ersten Besuch, speichert Choice in localStorage
+function initCookieBanner() {
+  const STORAGE_KEY = 'fotobus_cookie_consent';
+
+  // Falls User schon bestätigt hat → Banner nicht zeigen
+  try {
+    if (localStorage.getItem(STORAGE_KEY)) return;
+  } catch (e) {
+    // localStorage nicht verfügbar (z.B. Private Mode) → Banner immer anzeigen
+  }
+
+  // Banner-Element bauen
+  const banner = document.createElement('div');
+  banner.className = 'cookie-banner';
+  banner.setAttribute('role', 'dialog');
+  banner.setAttribute('aria-label', 'Cookie-Hinweis');
+  banner.innerHTML = `
+    <p class="cookie-banner__text">
+      <span class="cookie-banner__icon">🍪</span>
+      <strong>Datenschutz-Hinweis:</strong> Diese Webseite verwendet ausschließlich <strong>technisch notwendige Cookies</strong> (Sicherheit &amp; Grundfunktion). Wir setzen <strong>keine Tracking-Cookies</strong>, keine Analyse-Tools, keine Werbung. Mehr Infos in unserer <a href="/datenschutz.html">Datenschutzerklärung</a>.
+    </p>
+    <div class="cookie-banner__actions">
+      <button type="button" class="cookie-banner__btn" aria-label="Hinweis bestätigen und schließen">Verstanden</button>
+    </div>
+  `;
+
+  document.body.appendChild(banner);
+
+  // Animation: Banner einblenden (mit kleinem Delay damit Animation greift)
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => banner.classList.add('is-visible'));
+  });
+
+  // Button-Click: Banner schließen + Choice speichern
+  const btn = banner.querySelector('.cookie-banner__btn');
+  btn.addEventListener('click', () => {
+    banner.classList.remove('is-visible');
+    setTimeout(() => banner.remove(), 400);
+    try {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify({ verstanden: true, timestamp: Date.now() }));
+    } catch (e) {
+      // ignorieren — kein localStorage verfügbar
+    }
+  });
+}
+
 // WhatsApp-Button: schwebt unten rechts auf allen Seiten
 function initWhatsAppButton() {
   if (document.querySelector('.whatsapp-float')) return;
@@ -107,6 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initSlider();
   initFormspreeForm();
   initWhatsAppButton();
+  initCookieBanner();
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.querySelector('.site-nav');
   if (toggle && nav) {
