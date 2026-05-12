@@ -148,8 +148,20 @@ function initWhatsAppButton() {
   document.body.appendChild(btn);
 }
 
+// Top-Bar Höhe dynamisch messen und als CSS-Variable setzen (für sticky-Stack-Header)
+function setTopbarHeightVar() {
+  const topbar = document.querySelector('.top-bar');
+  if (!topbar) return;
+  const h = topbar.offsetHeight;
+  if (h > 0) {
+    document.documentElement.style.setProperty('--topbar-height', h + 'px');
+  }
+}
+
 // Mobile-Menü Toggle
 document.addEventListener('DOMContentLoaded', () => {
+  setTopbarHeightVar();
+  window.addEventListener('resize', setTopbarHeightVar);
   initSlider();
   initFormspreeForm();
   initWhatsAppButton();

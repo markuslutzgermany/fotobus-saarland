@@ -357,9 +357,16 @@ section { padding: 4rem 0; }
 
 /* ----- 5. Header & Navigation ----- */
 .site-header {
-  position: sticky; top: 0; z-index: 100;
+  position: sticky;
+  top: var(--topbar-height, 40px);
+  z-index: 100;
   background: var(--white);
   box-shadow: var(--shadow-sm);
+}
+@media (max-width: 480px) {
+  .site-header {
+    top: var(--topbar-height, 34px);
+  }
 }
 .site-header .container {
   display: flex; align-items: center; justify-content: space-between;
