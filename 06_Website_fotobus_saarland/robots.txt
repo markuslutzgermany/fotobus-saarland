@@ -8,6 +8,9 @@ Allow: /
 Disallow: /danke.html
 Disallow: /impressum.html
 Disallow: /datenschutz.html
+Disallow: /agb.html
+Disallow: /avv.html
+Disallow: /assets/docs/
 
 # Sitemap-Verweis
 Sitemap: https://fotobus.saarland/sitemap.xml

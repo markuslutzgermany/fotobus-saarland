@@ -129,8 +129,21 @@
 
 <!-- Event-Info Kacheln -->
 <section id="event-info" style="background: white; padding: 3rem 0;">
-  <div class="container" style="max-width: 900px;">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1rem;">
+  <div class="container" style="max-width: 1100px;">
+    <style>
+      .event-info-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      @media (min-width: 600px) {
+        .event-info-grid { grid-template-columns: 1fr 1fr; }
+      }
+      @media (min-width: 900px) {
+        .event-info-grid { grid-template-columns: repeat(4, 1fr); }
+      }
+    </style>
+    <div class="event-info-grid">
       <div style="background: var(--light); padding: 1.5rem; border-radius: 8px; border-left: 4px solid var(--red);">
         <p style="font-size: 0.85rem; color: var(--red); text-transform: uppercase; letter-spacing: 0.05em; font-weight: 800; margin: 0 0 0.5rem;">📅 Datum</p>
         <p style="font-size: 1.15rem; font-weight: 700; margin: 0;">Dienstag<br>28. Juli 2026</p>
@@ -155,7 +168,7 @@
 <section style="background: linear-gradient(135deg, var(--red) 0%, var(--red-dark, #B50410) 100%); color: white; padding: 4rem 0;">
   <div class="container" style="max-width: 720px; text-align: center;">
     <p style="display: inline-block; background: rgba(255,255,255,.18); padding: 0.4rem 1rem; border-radius: 999px; font-size: 0.85rem; font-weight: 800; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 1rem; border: 1px solid rgba(255,255,255,.3);">🎁 Dein exklusiver Gutschein</p>
-    <h2 style="color: white; margin-bottom: 0.5rem;">100 € Rabatt auf jede Fotobus-Buchung</h2>
+    <h2 style="color: white; margin-bottom: 0.5rem;">100 € Rabatt auf deine nächste Fotobus-Buchung</h2>
     <p style="color: rgba(255,255,255,.9); font-size: 1.1rem; max-width: 540px; margin: 0 auto 2rem;">Nur für Besucher des KSC-Familientags. Einfach den Code merken oder Screenshot machen.</p>
 
     <div style="background: white; color: var(--dark); padding: 2rem 2.5rem; border-radius: 12px; box-shadow: 0 10px 40px rgba(0,0,0,0.25); max-width: 520px; margin: 0 auto;">
@@ -295,6 +308,30 @@
   </div>
 </section>
 
+<!-- 📱 QR-Code zum Teilen / Speichern -->
+<section style="background: white; padding: 3rem 0; text-align: center;">
+  <div class="container" style="max-width: 720px;">
+    <div class="divider" style="margin: 0 auto 1.5rem;"></div>
+    <h2>📱 Empfehle uns weiter</h2>
+    <p style="color: var(--grey); max-width: 500px; margin: 0 auto 2rem;">
+      Kennst du jemanden, der gerade ein Event plant? Lass ihn diesen QR-Code scannen — er landet direkt hier.
+    </p>
+
+    <div style="display: inline-block; padding: 1.5rem; background: white; border: 3px solid var(--red); border-radius: 10px; box-shadow: var(--shadow-md);">
+      <img
+        src="/assets/img/ksc-familientag-qrcode.png"
+        alt="QR-Code zur KSC-Familientag-Landing-Page"
+        style="width: 240px; height: 240px; display: block; image-rendering: crisp-edges;"
+        onerror="this.parentElement.innerHTML='<p style=color:var(--grey);font-size:0.9rem;padding:2rem;max-width:240px;>QR-Code wird in Kürze hier angezeigt.<br><br>Solange tut\\'s auch der direkte Link:<br><strong style=color:var(--red);word-break:break-all;>fotobus.saarland/ksc-familientag</strong></p>'"
+      >
+    </div>
+
+    <p style="font-size: 0.9rem; color: var(--grey); margin-top: 1.25rem;">
+      ↗ <a href="https://fotobus.saarland/ksc-familientag.html" style="color: var(--red);">fotobus.saarland/ksc-familientag</a>
+    </p>
+  </div>
+</section>
+
 <!-- Co-Branding Footer-Bereich -->
 <section style="background: var(--light); padding: 2.5rem 0; text-align: center;">
   <div class="container">
@@ -323,9 +360,26 @@
       <div><h4>Seiten</h4><p><a href="/">Start</a><br><a href="/der-bus.html">Der Bus</a><br><a href="/anlaesse.html">Anlässe</a><br><a href="/preise.html">Preise</a><br><a href="/faq.html">FAQ</a><br><a href="/kontakt.html">Kontakt</a></p></div>
       <div><h4>Schwester-Marke</h4><p><a href="https://fotobox.saarland/">fotobox.saarland</a></p></div>
     </div>
-    <div class="footer-bottom">Ein Service der <strong style="color: white;">Fotolutz Complex GmbH</strong> — seit 2012 für Sie im Saarland · ★★★★★ 5,0 / 24+ Google-Bewertungen<br>© 2026 Fotolutz Complex GmbH · <a href="/impressum.html">Impressum</a> · <a href="/datenschutz.html">Datenschutz</a></div>
+    <div class="footer-bottom">Ein Service der <strong style="color: white;">Fotolutz Complex GmbH</strong> — seit 2012 für Sie im Saarland · ★★★★★ 5,0 / 24+ Google-Bewertungen<br>© 2026 Fotolutz Complex GmbH · <a href="/impressum.html">Impressum</a> · <a href="/datenschutz.html">Datenschutz</a> · <a href="/agb.html">AGB</a> · <a href="/avv.html">AVV</a></div>
   </div>
 </footer>
 <script src="/assets/js/main.js" defer></script>
+
+<!-- URL-Parameter ?code=XYZ12345 automatisch ins Gutschein-Feld füllen (kompatibel mit zukünftigen pro-Code-QR-Codes) -->
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var params = new URLSearchParams(window.location.search);
+    var code = params.get('code');
+    if (code) {
+      var input = document.getElementById('gutschein');
+      if (input) {
+        input.value = code.toUpperCase();
+        // Sanftes Highlighten, damit der User sieht "ist schon drin"
+        input.style.backgroundColor = '#fff5f5';
+        setTimeout(function() { input.style.backgroundColor = ''; }, 2000);
+      }
+    }
+  });
+</script>
 </body>
 </html>
