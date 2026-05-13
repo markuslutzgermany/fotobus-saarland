@@ -35,3 +35,9 @@ test_outputs/
 08_Events_Referenzen/*.HEIC
 08_Events_Referenzen/*.jpg
 08_Events_Referenzen/*.JPG
+
+# Interne Marketing- & Projekt-Arbeitsordner — gehören nicht auf GitHub
+05_Social_Media/
+06_Branding/
+09-ProjektKSC/
+10_Datenschutz_AVV_Formulare/
