@@ -1,0 +1,14 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "fotobus-saarland",
+  "compatibility_date": "2026-05-20",
+  "observability": {
+    "enabled": true
+  },
+  "assets": {
+    "directory": "06_Website_fotobus_saarland"
+  },
+  "compatibility_flags": [
+    "nodejs_compat"
+  ]
+}
