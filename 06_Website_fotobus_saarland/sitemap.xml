@@ -20,7 +20,13 @@
   </url>
   <url>
     <loc>https://fotobus.saarland/preise</loc>
-    <lastmod>2026-06-15</lastmod>
+    <lastmod>2026-06-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://fotobus.saarland/espressobar</loc>
+    <lastmod>2026-06-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
