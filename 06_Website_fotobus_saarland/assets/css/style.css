@@ -450,7 +450,10 @@ section { padding: 4rem 0; }
 }
 .hero h1 { color: var(--white); margin-bottom: 1rem; }
 .hero .lead { color: rgba(255,255,255,.9); font-size: 1.35rem; margin-bottom: 2rem; max-width: 640px; }
-.hero-cta { margin-top: 1rem; }
+.hero-cta { margin-top: 1rem; padding-left: 8%; }
+@media (max-width: 768px) {
+  .hero-cta { padding-left: 0; }
+}
 
 /* ----- 8. Trennleiste / rote Balken (Markenelement) ----- */
 .divider {
