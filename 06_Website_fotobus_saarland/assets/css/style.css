@@ -450,9 +450,9 @@ section { padding: 4rem 0; }
 }
 .hero h1 { color: var(--white); margin-bottom: 1rem; }
 .hero .lead { color: rgba(255,255,255,.9); font-size: 1.35rem; margin-bottom: 2rem; max-width: 640px; }
-.hero-cta { margin-top: 1rem; padding-left: 35%; }
+.hero-cta { margin-top: 1rem; padding-left: 43%; }
 .hero-cta + p,
-.hero-cta + p + p { padding-left: 35%; }
+.hero-cta + p + p { padding-left: 43%; }
 @media (max-width: 768px) {
   .hero-cta,
   .hero-cta + p,
