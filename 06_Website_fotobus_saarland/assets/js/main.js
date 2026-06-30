@@ -275,3 +275,51 @@ document.addEventListener('DOMContentLoaded', () => {
     if (Math.abs(dx) > 50) nav(dx > 0 ? -1 : 1);
   }, {passive: true});
 })();
+
+// ============== VIDEO-LIGHTBOX ==============
+(function() {
+  const cards = document.querySelectorAll('.video-card');
+  if (!cards.length) return;
+
+  const lb = document.createElement('div');
+  lb.className = 'video-lightbox';
+  lb.innerHTML = `
+    <button class="video-lightbox-close" aria-label="Schliessen">×</button>
+    <div class="video-lightbox-inner">
+      <video controls playsinline></video>
+      <div class="video-lightbox-caption"></div>
+    </div>
+  `;
+  document.body.appendChild(lb);
+
+  const video = lb.querySelector('video');
+  const cap = lb.querySelector('.video-lightbox-caption');
+
+  function open(src, caption, poster) {
+    video.src = src;
+    if (poster) video.poster = poster;
+    cap.textContent = caption || '';
+    cap.style.display = caption ? 'block' : 'none';
+    lb.classList.add('is-open');
+    document.body.style.overflow = 'hidden';
+    video.play().catch(() => {}); // autoplay (mit Klick erlaubt)
+  }
+  function close() {
+    video.pause();
+    video.removeAttribute('src');
+    video.load();
+    lb.classList.remove('is-open');
+    document.body.style.overflow = '';
+  }
+
+  cards.forEach(card => {
+    card.addEventListener('click', () => {
+      open(card.dataset.video, card.dataset.caption, card.dataset.poster);
+    });
+  });
+  lb.querySelector('.video-lightbox-close').addEventListener('click', close);
+  lb.addEventListener('click', e => { if (e.target === lb) close(); });
+  document.addEventListener('keydown', e => {
+    if (lb.classList.contains('is-open') && e.key === 'Escape') close();
+  });
+})();
