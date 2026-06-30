@@ -225,26 +225,63 @@
   </div>
 </section>
 
-<section>
-  <div class="container" style="max-width: 900px;">
-    <h2>Technische Eckdaten</h2>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
-      <div>
-        <h3 style="font-size: 1rem; color: var(--red);">Fahrzeug</h3>
-        <p>Mercedes Löschfahrzeug, original Feuerwehr-Lackierung &amp; Beschriftung</p>
-      </div>
-      <div>
-        <h3 style="font-size: 1rem; color: var(--red);">Stromversorgung</h3>
-        <p>230 V Anschluss benötigt (Verlängerungskabel mitgebracht), alternativ Inselversorgung möglich</p>
-      </div>
-      <div>
-        <h3 style="font-size: 1rem; color: var(--red);">Stellfläche</h3>
-        <p>Bus 6,50 m lang · ideal 8 × 3,5 m, ebener Untergrund, Asphalt oder feste Wiese · Einstieg rechts oder links wählbar</p>
-      </div>
-      <div>
-        <h3 style="font-size: 1rem; color: var(--red);">Aufbauzeit</h3>
-        <p>30–45 Minuten vor Eventbeginn, sofort einsatzbereit</p>
-      </div>
+<!-- 🎬 Aus dem Einsatz — Video-Galerie -->
+<section id="video-galerie" class="section-light" style="padding: 4rem 0;">
+  <div class="container">
+    <div class="section-intro" style="text-align: center; margin-bottom: 2.5rem;">
+      <div class="divider" style="margin: 0 auto 1.5rem;"></div>
+      <h2>🎬 Aus dem Einsatz — Live-Galerie</h2>
+      <p style="color: var(--grey);">Echte Atmosphäre aus echten Events. Klick auf ein Video für die Großansicht mit Ton.</p>
+    </div>
+
+    <div class="video-gallery">
+      <button class="video-card" data-video="/assets/video/firmenfeier-by-schulz-stimmung.mp4" data-poster="/assets/img/firmenfeier-by-schulz-stimmung-poster-1600.jpg" data-caption="Firmengründer Schulz mit Gästen — 25-Jahre-Jubiläum">
+        <picture>
+          <source srcset="/assets/img/firmenfeier-by-schulz-stimmung-poster-800.webp" type="image/webp">
+          <img src="/assets/img/firmenfeier-by-schulz-stimmung-poster-800.jpg" alt="Stimmung im Bus — Firmengründer Schulz mit Gästen beim 25-Jahre-Jubiläum" loading="lazy">
+        </picture>
+        <div class="video-card-overlay">
+          <span class="video-play">▶</span>
+          <strong>Firmengründer Schulz · 25 Jahre</strong>
+          <small>Wenn sogar der Chef die Requisiten greift</small>
+        </div>
+      </button>
+
+      <button class="video-card video-card-portrait" data-video="/assets/video/warteschlange-voller-bus.mp4" data-poster="/assets/img/warteschlange-voller-bus-poster-720.jpg" data-caption="Warteschlange mit vollem Bus — Hochzeitsgesellschaft drinnen, weitere Gäste warten">
+        <picture>
+          <source srcset="/assets/img/warteschlange-voller-bus-poster-360.webp" type="image/webp">
+          <img src="/assets/img/warteschlange-voller-bus-poster-360.jpg" alt="Hochzeitsgäste im vollen Bus — Schlangen-Effekt am Feuerwehr-Fotobus" loading="lazy">
+        </picture>
+        <div class="video-card-overlay">
+          <span class="video-play">▶</span>
+          <strong>Warteschlange · Voller Bus</strong>
+          <small>Drinnen voll, draußen Schlange</small>
+        </div>
+      </button>
+
+      <button class="video-card" data-video="/assets/video/stimmung-firmenfest.mp4" data-poster="/assets/img/stimmung-firmenfest-poster-1280.jpg" data-caption="Stimmung im Bus bei einem abendlichen Firmenfest">
+        <picture>
+          <source srcset="/assets/img/stimmung-firmenfest-poster-640.webp" type="image/webp">
+          <img src="/assets/img/stimmung-firmenfest-poster-640.jpg" alt="Abend-Stimmung im Fotobus bei Firmenfest" loading="lazy">
+        </picture>
+        <div class="video-card-overlay">
+          <span class="video-play">▶</span>
+          <strong>Firmenfest · Abend-Stimmung</strong>
+          <small>Roter Glitzer, Party im Bus</small>
+        </div>
+      </button>
+
+      <button class="video-card" data-video="/assets/video/taiwanesische-gaeste.mp4" data-poster="/assets/img/taiwanesische-gaeste-poster-1280.jpg" data-caption="Internationale Gäste am Feuerwehr-Fotobus — sowas haben sie noch nicht gesehen">
+        <picture>
+          <source srcset="/assets/img/taiwanesische-gaeste-poster-640.webp" type="image/webp">
+          <img src="/assets/img/taiwanesische-gaeste-poster-640.jpg" alt="Internationale Gäste begeistert am Feuerwehr-Fotobus" loading="lazy">
+        </picture>
+        <div class="video-card-overlay">
+          <span class="video-play">▶</span>
+          <strong>Internationale Gäste</strong>
+          <small>„Sowas haben Sie noch nicht gesehen"</small>
+        </div>
+      </button>
     </div>
   </div>
 </section>
@@ -269,6 +306,40 @@
         <p style="margin-top: 1.25rem; padding: 0.75rem 1rem; background: var(--light); border-left: 4px solid var(--red); border-radius: 4px; font-size: 0.95rem;">
           <strong>Silbernes Absperrsystem inkl. rotem Teppich · in jedem Paket inkl. · kein Aufpreis.</strong> Aufstellung individuell links oder rechts vom Bus möglich.
         </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 🛠 Setup & Aufbau (Hero mit Setup-Video) -->
+<section id="setup" style="padding: 4rem 0;">
+  <div class="container">
+    <div class="section-intro" style="text-align: center; margin-bottom: 2.5rem;">
+      <div class="divider" style="margin: 0 auto 1.5rem;"></div>
+      <h2>🛠 Setup &amp; Aufbau — komplett aus einer Hand</h2>
+      <p style="color: var(--grey);">Bus, Zelt, Stanchions, Roter Teppich — Sie bekommen nicht nur ein Fahrzeug, sondern eine fertige Empfangszone.</p>
+    </div>
+
+    <div style="display: grid; grid-template-columns: minmax(0, 320px) 1fr; gap: 3rem; align-items: center; max-width: 980px; margin: 0 auto;">
+      <!-- Setup-Video (Hochformat) -->
+      <div style="background: black; border-radius: 12px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.18);">
+        <video controls preload="metadata" poster="/assets/img/setup-bus-bei38-grad-poster-720.jpg" style="width: 100%; display: block; aspect-ratio: 9/16; object-fit: cover; background: black;">
+          <source src="/assets/video/setup-bus-bei38-grad.mp4" type="video/mp4">
+          Ihr Browser unterstützt kein HTML5-Video.
+        </video>
+      </div>
+
+      <!-- Beschreibung -->
+      <div>
+        <h3 style="margin-top: 0;">Komplettes Empfangs-Setup, auch bei 38°C</h3>
+        <p style="color: var(--grey); line-height: 1.7;">Das Setup-Video zeigt einen heißen Sommertag — beide Bus-Türen offen, weißes Zelt für Schatten, Roter Teppich zwischen Stanchions. So bauen wir auf, bei jedem Event.</p>
+        <ul style="margin: 1.25rem 0 1.5rem 1.25rem; color: var(--grey); line-height: 1.8;">
+          <li><strong>Bus + Empfangszone</strong> — kein Auspacken durch Sie, kein extra Dienstleister</li>
+          <li><strong>Weißes Zelt</strong> bei Sommer-Events für Schatten / Regen-Schutz</li>
+          <li><strong>Silbernes Absperrsystem + Roter Teppich</strong> — Premium-Look bei jedem Anlass</li>
+          <li><strong>Auch bei extremen Temperaturen</strong> einsatzbereit</li>
+          <li><strong>~45 Min Aufbau</strong>, ~30 Min Abbau — alles im Paketpreis enthalten</li>
+        </ul>
       </div>
     </div>
   </div>
@@ -319,97 +390,26 @@
   </div>
 </section>
 
-<!-- 🛠 Setup & Aufbau (Hero mit Setup-Video) -->
-<section id="setup" style="padding: 4rem 0;">
-  <div class="container">
-    <div class="section-intro" style="text-align: center; margin-bottom: 2.5rem;">
-      <div class="divider" style="margin: 0 auto 1.5rem;"></div>
-      <h2>🛠 Setup &amp; Aufbau — komplett aus einer Hand</h2>
-      <p style="color: var(--grey);">Bus, Zelt, Stanchions, Roter Teppich — Sie bekommen nicht nur ein Fahrzeug, sondern eine fertige Empfangszone.</p>
-    </div>
-
-    <div style="display: grid; grid-template-columns: minmax(0, 320px) 1fr; gap: 3rem; align-items: center; max-width: 980px; margin: 0 auto;">
-      <!-- Setup-Video (Hochformat) -->
-      <div style="background: black; border-radius: 12px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.18);">
-        <video controls preload="metadata" poster="/assets/img/setup-bus-bei38-grad-poster-720.jpg" style="width: 100%; display: block; aspect-ratio: 9/16; object-fit: cover; background: black;">
-          <source src="/assets/video/setup-bus-bei38-grad.mp4" type="video/mp4">
-          Ihr Browser unterstützt kein HTML5-Video.
-        </video>
-      </div>
-
-      <!-- Beschreibung -->
+<section>
+  <div class="container" style="max-width: 900px;">
+    <h2>Technische Eckdaten</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 2rem; margin-top: 1.5rem;">
       <div>
-        <h3 style="margin-top: 0;">Komplettes Empfangs-Setup, auch bei 38°C</h3>
-        <p style="color: var(--grey); line-height: 1.7;">Das Setup-Video zeigt einen heißen Sommertag — beide Bus-Türen offen, weißes Zelt für Schatten, Roter Teppich zwischen Stanchions. So bauen wir auf, bei jedem Event.</p>
-        <ul style="margin: 1.25rem 0 1.5rem 1.25rem; color: var(--grey); line-height: 1.8;">
-          <li><strong>Bus + Empfangszone</strong> — kein Auspacken durch Sie, kein extra Dienstleister</li>
-          <li><strong>Weißes Zelt</strong> bei Sommer-Events für Schatten / Regen-Schutz</li>
-          <li><strong>Silbernes Absperrsystem + Roter Teppich</strong> — Premium-Look bei jedem Anlass</li>
-          <li><strong>Auch bei extremen Temperaturen</strong> einsatzbereit</li>
-          <li><strong>~45 Min Aufbau</strong>, ~30 Min Abbau — alles im Paketpreis enthalten</li>
-        </ul>
+        <h3 style="font-size: 1rem; color: var(--red);">Fahrzeug</h3>
+        <p>Mercedes Löschfahrzeug, original Feuerwehr-Lackierung &amp; Beschriftung</p>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- 🎬 Aus dem Einsatz — Video-Galerie -->
-<section id="video-galerie" class="section-light" style="padding: 4rem 0;">
-  <div class="container">
-    <div class="section-intro" style="text-align: center; margin-bottom: 2.5rem;">
-      <div class="divider" style="margin: 0 auto 1.5rem;"></div>
-      <h2>🎬 Aus dem Einsatz — Live-Galerie</h2>
-      <p style="color: var(--grey);">Echte Atmosphäre aus echten Events. Klick auf ein Video für die Großansicht mit Ton.</p>
-    </div>
-
-    <div class="video-gallery">
-      <button class="video-card" data-video="/assets/video/firmenfeier-by-schulz-stimmung.mp4" data-poster="/assets/img/firmenfeier-by-schulz-stimmung-poster-1600.jpg" data-caption="Firmengründer Schulz mit Gästen — 25-Jahre-Jubiläum">
-        <picture>
-          <source srcset="/assets/img/firmenfeier-by-schulz-stimmung-poster-800.webp" type="image/webp">
-          <img src="/assets/img/firmenfeier-by-schulz-stimmung-poster-800.jpg" alt="Stimmung im Bus — Firmengründer Schulz mit Gästen beim 25-Jahre-Jubiläum" loading="lazy">
-        </picture>
-        <div class="video-card-overlay">
-          <span class="video-play">▶</span>
-          <strong>Firmengründer Schulz · 25 Jahre</strong>
-          <small>Wenn sogar der Chef die Requisiten greift</small>
-        </div>
-      </button>
-
-      <button class="video-card video-card-portrait" data-video="/assets/video/warteschlange-voller-bus.mp4" data-poster="/assets/img/warteschlange-voller-bus-poster-720.jpg" data-caption="Warteschlange mit vollem Bus — Hochzeitsgesellschaft drinnen, weitere Gäste warten">
-        <picture>
-          <source srcset="/assets/img/warteschlange-voller-bus-poster-360.webp" type="image/webp">
-          <img src="/assets/img/warteschlange-voller-bus-poster-360.jpg" alt="Hochzeitsgäste im vollen Bus — Schlangen-Effekt am Feuerwehr-Fotobus" loading="lazy">
-        </picture>
-        <div class="video-card-overlay">
-          <span class="video-play">▶</span>
-          <strong>Warteschlange · Voller Bus</strong>
-          <small>Drinnen voll, draußen Schlange</small>
-        </div>
-      </button>
-
-      <button class="video-card video-card-portrait" data-video="/assets/video/stimmung-firmenfest.mp4" data-poster="/assets/img/stimmung-firmenfest-poster-720.jpg" data-caption="Stimmung im Bus bei einem abendlichen Firmenfest">
-        <picture>
-          <source srcset="/assets/img/stimmung-firmenfest-poster-360.webp" type="image/webp">
-          <img src="/assets/img/stimmung-firmenfest-poster-360.jpg" alt="Abend-Stimmung im Fotobus bei Firmenfest" loading="lazy">
-        </picture>
-        <div class="video-card-overlay">
-          <span class="video-play">▶</span>
-          <strong>Firmenfest · Abend-Stimmung</strong>
-          <small>Roter Glitzer, Party im Bus</small>
-        </div>
-      </button>
-
-      <button class="video-card" data-video="/assets/video/taiwanesische-gaeste.mp4" data-poster="/assets/img/taiwanesische-gaeste-poster-1280.jpg" data-caption="Internationale Gäste am Feuerwehr-Fotobus — sowas haben sie noch nicht gesehen">
-        <picture>
-          <source srcset="/assets/img/taiwanesische-gaeste-poster-640.webp" type="image/webp">
-          <img src="/assets/img/taiwanesische-gaeste-poster-640.jpg" alt="Internationale Gäste begeistert am Feuerwehr-Fotobus" loading="lazy">
-        </picture>
-        <div class="video-card-overlay">
-          <span class="video-play">▶</span>
-          <strong>Internationale Gäste</strong>
-          <small>„Sowas haben Sie noch nicht gesehen"</small>
-        </div>
-      </button>
+      <div>
+        <h3 style="font-size: 1rem; color: var(--red);">Stromversorgung</h3>
+        <p>230 V Anschluss benötigt (Verlängerungskabel mitgebracht), alternativ Inselversorgung möglich</p>
+      </div>
+      <div>
+        <h3 style="font-size: 1rem; color: var(--red);">Stellfläche</h3>
+        <p>Bus 6,50 m lang · ideal 8 × 3,5 m, ebener Untergrund, Asphalt oder feste Wiese · Einstieg rechts oder links wählbar</p>
+      </div>
+      <div>
+        <h3 style="font-size: 1rem; color: var(--red);">Aufbauzeit</h3>
+        <p>30–45 Minuten vor Eventbeginn, sofort einsatzbereit</p>
+      </div>
     </div>
   </div>
 </section>
