@@ -5,10 +5,16 @@ User-agent: *
 Allow: /
 
 # Seiten, die nicht indexiert werden sollen:
+# (beide Formen — Pretty URL + .html — für Kompatibilität)
+Disallow: /danke
 Disallow: /danke.html
+Disallow: /impressum
 Disallow: /impressum.html
+Disallow: /datenschutz
 Disallow: /datenschutz.html
+Disallow: /agb
 Disallow: /agb.html
+Disallow: /avv
 Disallow: /avv.html
 Disallow: /assets/docs/
 

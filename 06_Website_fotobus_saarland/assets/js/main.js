@@ -61,7 +61,7 @@ function initFormspreeForm() {
       });
 
       if (response.ok) {
-        window.location.href = '/danke.html';
+        window.location.href = '/danke';
       } else {
         // Formspree-Validierungsfehler oder Quota überschritten
         const data = await response.json().catch(() => ({}));
@@ -97,7 +97,7 @@ function initCookieBanner() {
   banner.innerHTML = `
     <p class="cookie-banner__text">
       <span class="cookie-banner__icon">🍪</span>
-      <strong>Datenschutz-Hinweis:</strong> Diese Webseite verwendet ausschließlich <strong>technisch notwendige Cookies</strong> (Sicherheit &amp; Grundfunktion). Wir setzen <strong>keine Tracking-Cookies</strong>, keine Analyse-Tools, keine Werbung. Mehr Infos in unserer <a href="/datenschutz.html">Datenschutzerklärung</a>.
+      <strong>Datenschutz-Hinweis:</strong> Diese Webseite verwendet ausschließlich <strong>technisch notwendige Cookies</strong> (Sicherheit &amp; Grundfunktion). Wir setzen <strong>keine Tracking-Cookies</strong>, keine Analyse-Tools, keine Werbung. Mehr Infos in unserer <a href="/datenschutz">Datenschutzerklärung</a>.
     </p>
     <div class="cookie-banner__actions">
       <button type="button" class="cookie-banner__btn" aria-label="Hinweis bestätigen und schließen">Verstanden</button>
