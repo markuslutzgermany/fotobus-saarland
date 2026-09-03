@@ -70,7 +70,7 @@
 
 <section style="padding: 1rem 0 4rem;">
   <div class="container">
-    <picture><source srcset="/assets/img/bus-01-1600.webp" type="image/webp"><img src="/assets/img/bus-01-1600.jpg" alt="Feuerwehr-Fotobus von außen — roter Mercedes mit Aufschrift FEUERWEHR" style="border-radius: 8px; box-shadow: var(--shadow-lg);"></picture>
+    <picture><source media="(max-width: 800px)" srcset="/assets/img/bus-01-800.webp" type="image/webp"><source media="(max-width: 800px)" srcset="/assets/img/bus-01-800.jpg"><source srcset="/assets/img/bus-01-1600.webp" type="image/webp"><img src="/assets/img/bus-01-1600.jpg" alt="Feuerwehr-Fotobus von außen — roter Mercedes mit Aufschrift FEUERWEHR" style="border-radius: 8px; box-shadow: var(--shadow-lg);"></picture>
   </div>
 </section>
 
@@ -85,10 +85,15 @@
       <!-- 🎬 Throwback: Karneval 2017 mit dem ersten Bus -->
       <div style="margin-top: 2.5rem; padding: 1.5rem; background: white; border-radius: 8px; border-left: 4px solid var(--red); box-shadow: var(--shadow-md);">
         <p style="margin: 0 0 1rem; font-weight: 800; color: var(--red); text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.85rem;">📅 Beweis-Footage · Karneval 2017</p>
-        <video controls preload="metadata" poster="/assets/img/karneval-2015-poster-1600.jpg" style="width: 100%; border-radius: 6px; display: block; margin-bottom: 1rem; background: black; aspect-ratio: 16/9; object-fit: cover;">
-          <source src="/assets/video/karneval-2015.mp4" type="video/mp4">
-          Ihr Browser unterstützt kein HTML5-Video. <a href="/assets/video/karneval-2015.mp4">Video direkt herunterladen</a>.
-        </video>
+        <button class="video-card" data-video="/assets/video/karneval-2015.mp4" data-poster="/assets/img/karneval-2015-poster-1600.jpg" data-caption="Karneval 2017 mit dem ersten Bus" aria-label="Video abspielen: Karneval 2017" style="width: 100%; border-radius: 6px; margin-bottom: 1rem;">
+          <picture>
+            <source srcset="/assets/img/karneval-2015-poster-800.webp" type="image/webp">
+            <img src="/assets/img/karneval-2015-poster-800.jpg" alt="Vorschau: Karneval 2017 mit dem ersten Feuerwehr-Fotobus" loading="lazy">
+          </picture>
+          <div class="video-card-overlay">
+            <span class="video-play">▶</span>
+          </div>
+        </button>
         <p style="margin: 0; font-size: 0.95rem; color: var(--grey); font-style: italic;">
           Saarbrücker Karneval 2017 mit dem <strong style="color: var(--dark);">ersten Feuerwehr-Fotobus</strong>. Funkenmariechen, Garde, Hippies, Bienen — alle in den Bus, posieren, lachen, Sofortprint mitnehmen. 10 Jahre später: neuer Mercedes, gleiches Konzept. Wir sind das Original.
         </p>
@@ -297,7 +302,7 @@
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(360px, 1fr)); gap: 2.5rem; align-items: center; margin: 2rem 0;">
       <div>
-        <picture><source srcset="/assets/img/vip-empfang-detail-1600.webp" type="image/webp"><img src="/assets/img/vip-empfang-detail-1600.jpg" alt="Silbernes Absperrsystem mit Stanchions, schwarzen Seilen und rotem Teppich am Feuerwehr-Fotobus — Premium-Empfang in der Blue Hour" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);" loading="lazy"></picture>
+        <picture><source media="(max-width: 800px)" srcset="/assets/img/vip-empfang-detail-800.webp" type="image/webp"><source media="(max-width: 800px)" srcset="/assets/img/vip-empfang-detail-800.jpg"><source srcset="/assets/img/vip-empfang-detail-1600.webp" type="image/webp"><img src="/assets/img/vip-empfang-detail-1600.jpg" alt="Silbernes Absperrsystem mit Stanchions, schwarzen Seilen und rotem Teppich am Feuerwehr-Fotobus — Premium-Empfang in der Blue Hour" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);" loading="lazy"></picture>
       </div>
       <div>
         <h3 style="color: var(--red); margin-top: 0; margin-bottom: 1rem;">Premium-Empfang mit roter-Teppich-Effekt</h3>
@@ -323,10 +328,15 @@
     <div style="display: grid; grid-template-columns: minmax(0, 320px) 1fr; gap: 3rem; align-items: center; max-width: 980px; margin: 0 auto;">
       <!-- Setup-Video (Hochformat) -->
       <div style="background: black; border-radius: 12px; overflow: hidden; box-shadow: 0 12px 32px rgba(0,0,0,0.18);">
-        <video controls preload="metadata" poster="/assets/img/setup-bus-bei38-grad-poster-720.jpg" style="width: 100%; display: block; aspect-ratio: 9/16; object-fit: cover; background: black;">
-          <source src="/assets/video/setup-bus-bei38-grad.mp4" type="video/mp4">
-          Ihr Browser unterstützt kein HTML5-Video.
-        </video>
+        <button class="video-card video-card-portrait" data-video="/assets/video/setup-bus-bei38-grad.mp4" data-poster="/assets/img/setup-bus-bei38-grad-poster-720.jpg" data-caption="Setup bei 38°C — Zelt, Stanchions, roter Teppich" aria-label="Video abspielen: Setup bei 38 Grad" style="width: 100%;">
+          <picture>
+            <source srcset="/assets/img/setup-bus-bei38-grad-poster-360.webp" type="image/webp">
+            <img src="/assets/img/setup-bus-bei38-grad-poster-360.jpg" alt="Vorschau: Setup des Feuerwehr-Fotobus bei 38 Grad mit Zelt und rotem Teppich" loading="lazy">
+          </picture>
+          <div class="video-card-overlay">
+            <span class="video-play">▶</span>
+          </div>
+        </button>
       </div>
 
       <!-- Beschreibung -->
@@ -356,15 +366,15 @@
 
     <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.5rem; margin: 2rem 0;">
       <div>
-        <picture><source srcset="/assets/img/werbeflaeche-links-1600.webp" type="image/webp"><img src="/assets/img/werbeflaeche-links-1600.jpg" alt="Werbefläche linke Bus-Seite — 1,28 m × 1,28 m für Ihr Logo, Ihre Werbung oder Kampagnen-Motive" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);" loading="lazy"></picture>
+        <picture><source media="(max-width: 800px)" srcset="/assets/img/werbeflaeche-links-800.webp" type="image/webp"><source media="(max-width: 800px)" srcset="/assets/img/werbeflaeche-links-800.jpg"><source srcset="/assets/img/werbeflaeche-links-1600.webp" type="image/webp"><img src="/assets/img/werbeflaeche-links-1600.jpg" alt="Werbefläche linke Bus-Seite — 1,28 m × 1,28 m für Ihr Logo, Ihre Werbung oder Kampagnen-Motive" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);" loading="lazy"></picture>
         <p style="text-align: center; margin-top: 0.5rem; font-size: 0.9rem; color: var(--grey);"><strong>Links</strong> · 1,28 m × 1,28 m · ~1,6 m²</p>
       </div>
       <div>
-        <picture><source srcset="/assets/img/werbeflaeche-rechts-1600.webp" type="image/webp"><img src="/assets/img/werbeflaeche-rechts-1600.jpg" alt="Werbefläche rechte Bus-Seite — Logo-Platzierung gegenüber dem Empfangsbereich mit rotem Teppich" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);" loading="lazy"></picture>
+        <picture><source media="(max-width: 800px)" srcset="/assets/img/werbeflaeche-rechts-800.webp" type="image/webp"><source media="(max-width: 800px)" srcset="/assets/img/werbeflaeche-rechts-800.jpg"><source srcset="/assets/img/werbeflaeche-rechts-1600.webp" type="image/webp"><img src="/assets/img/werbeflaeche-rechts-1600.jpg" alt="Werbefläche rechte Bus-Seite — Logo-Platzierung gegenüber dem Empfangsbereich mit rotem Teppich" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);" loading="lazy"></picture>
         <p style="text-align: center; margin-top: 0.5rem; font-size: 0.9rem; color: var(--grey);"><strong>Rechts</strong> · 1,28 m × 1,28 m · ~1,6 m²</p>
       </div>
       <div>
-        <picture><source srcset="/assets/img/werbeflaeche-hinten-1600.webp" type="image/webp"><img src="/assets/img/werbeflaeche-hinten-1600.jpg" alt="Werbefläche am Heck des Feuerwehr-Fotobus — 1,18 m × 1,30 m für maximale Sichtbarkeit von hinten, sichtbar bei jeder Anfahrt und im Stand" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);" loading="lazy"></picture>
+        <picture><source media="(max-width: 800px)" srcset="/assets/img/werbeflaeche-hinten-800.webp" type="image/webp"><source media="(max-width: 800px)" srcset="/assets/img/werbeflaeche-hinten-800.jpg"><source srcset="/assets/img/werbeflaeche-hinten-1600.webp" type="image/webp"><img src="/assets/img/werbeflaeche-hinten-1600.jpg" alt="Werbefläche am Heck des Feuerwehr-Fotobus — 1,18 m × 1,30 m für maximale Sichtbarkeit von hinten, sichtbar bei jeder Anfahrt und im Stand" style="width: 100%; border-radius: 8px; box-shadow: var(--shadow-md);" loading="lazy"></picture>
         <p style="text-align: center; margin-top: 0.5rem; font-size: 0.9rem; color: var(--grey);"><strong>Heck</strong> · 1,18 m × 1,30 m · ~1,5 m²</p>
       </div>
     </div>

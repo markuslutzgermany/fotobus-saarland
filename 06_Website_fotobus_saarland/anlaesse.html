@@ -117,7 +117,7 @@
 <section style="padding: 0 0 2rem;">
   <div class="container">
     <picture>
-      <source srcset="/assets/img/event-01-gaeste-1600.webp" type="image/webp">
+      <source media="(max-width: 800px)" srcset="/assets/img/event-01-gaeste-800.webp" type="image/webp"><source media="(max-width: 800px)" srcset="/assets/img/event-01-gaeste-800.jpg"><source srcset="/assets/img/event-01-gaeste-1600.webp" type="image/webp">
       <img src="/assets/img/event-01-gaeste-1600.jpg" alt="Gäste am Feuerwehr-Fotobus auf einem Premium-Event mit rotem Teppich und LED-Beleuchtung" class="hero-anlaesse">
     </picture>
   </div>
@@ -144,7 +144,7 @@
   <div class="container">
     <div class="anlass-row">
       <picture>
-        <source srcset="/assets/img/event-06-vip-empfang-1600.webp" type="image/webp">
+        <source media="(max-width: 800px)" srcset="/assets/img/event-06-vip-empfang-800.webp" type="image/webp"><source media="(max-width: 800px)" srcset="/assets/img/event-06-vip-empfang-800.jpg"><source srcset="/assets/img/event-06-vip-empfang-1600.webp" type="image/webp">
         <img src="/assets/img/event-06-vip-empfang-1600.jpg" alt="VIP-Empfang am Feuerwehr-Fotobus bei einer Mitarbeiterveranstaltung der Deutschen Bank Saarbrücken" class="anlass-image" loading="lazy">
       </picture>
       <div>
@@ -168,10 +168,15 @@
         <!-- 🎥 Live-Beleg: Stimmungsvideo aus dem Bus (25-Jahre-By-Schulz) -->
         <div style="margin: 2rem 0; padding: 1.5rem; background: var(--dark); border-radius: 10px;">
           <p style="margin: 0 0 1rem; font-weight: 800; color: white; text-transform: uppercase; letter-spacing: 0.05em; font-size: 0.85rem;">🎥 Live-Beleg · 25-Jahre-Feier By Schulz</p>
-          <video controls preload="metadata" poster="/assets/img/firmenfeier-by-schulz-stimmung-poster-1600.jpg" style="width: 100%; border-radius: 6px; display: block; background: black; aspect-ratio: 16/9; object-fit: cover;">
-            <source src="/assets/video/firmenfeier-by-schulz-stimmung.mp4" type="video/mp4">
-            Ihr Browser unterstützt kein HTML5-Video.
-          </video>
+          <button class="video-card" data-video="/assets/video/firmenfeier-by-schulz-stimmung.mp4" data-poster="/assets/img/firmenfeier-by-schulz-stimmung-poster-1600.jpg" data-caption="Firmengründer Schulz mit Gästen — 25-Jahre-Jubiläum" aria-label="Video abspielen: Stimmung bei der Firmenfeier" style="width: 100%; border-radius: 6px;">
+            <picture>
+              <source srcset="/assets/img/firmenfeier-by-schulz-stimmung-poster-800.webp" type="image/webp">
+              <img src="/assets/img/firmenfeier-by-schulz-stimmung-poster-800.jpg" alt="Vorschau: Stimmung im Bus beim 25-Jahre-Jubiläum von Firmengründer Schulz" loading="lazy">
+            </picture>
+            <div class="video-card-overlay">
+              <span class="video-play">▶</span>
+            </div>
+          </button>
           <p style="margin: 1rem 0 0; font-size: 0.95rem; color: rgba(255,255,255,0.85); line-height: 1.6;">
             Stimmungsfilm aus dem Bus — <strong style="color: white;">Firmengründer Schulz selbst (mit Police-Mütze)</strong> mit Gästen beim 25-Jahre-Jubiläum. Wenn sogar der Chef die Foto-Requisiten greift, weiß die Belegschaft: heute ist ein guter Tag.
           </p>
@@ -188,7 +193,7 @@
   <div class="container">
     <div class="anlass-row reverse">
       <picture>
-        <source srcset="/assets/img/event-04-moebel-ehrmann-1600.webp" type="image/webp">
+        <source media="(max-width: 800px)" srcset="/assets/img/event-04-moebel-ehrmann-800.webp" type="image/webp"><source media="(max-width: 800px)" srcset="/assets/img/event-04-moebel-ehrmann-800.jpg"><source srcset="/assets/img/event-04-moebel-ehrmann-1600.webp" type="image/webp">
         <img src="/assets/img/event-04-moebel-ehrmann-1600.jpg" alt="Tag der offenen Tür bei Möbel Ehrmann — Familien strömen zum Feuerwehr-Fotobus" class="anlass-image" loading="lazy">
       </picture>
       <div>
@@ -266,7 +271,7 @@
         <h3 style="margin: 0 0 0.75rem;">So sieht der Ausdruck aus, den die Gäste mit nach Hause nehmen</h3>
         <p style="color: var(--grey); margin: 0 0 2rem;">Mit Hochzeitsdatum, Brautpaar-Namen, dezentem Branding und QR-Code zur Online-Galerie. Nach Ihrer Vorgabe gestaltet (DTB-Aufbau für den Fotodruck) — jedes Bild wird zum Erinnerungsstück.</p>
         <picture>
-          <source srcset="/assets/img/hochzeit-sofortprint-beispiel-1600.webp" type="image/webp">
+          <source media="(max-width: 800px)" srcset="/assets/img/hochzeit-sofortprint-beispiel-800.webp" type="image/webp"><source media="(max-width: 800px)" srcset="/assets/img/hochzeit-sofortprint-beispiel-800.jpg"><source srcset="/assets/img/hochzeit-sofortprint-beispiel-1600.webp" type="image/webp">
           <img src="/assets/img/hochzeit-sofortprint-beispiel-1600.jpg" alt="Beispiel-Sofortprint einer Hochzeit — Lea & Christopher 13.06.2026 — Hochzeitsgäste mit Foto-Requisiten in der Fotobox" loading="lazy" style="width: 100%; max-width: 600px; border-radius: 8px; box-shadow: 0 12px 36px rgba(0,0,0,0.18); display: block; margin: 0 auto;">
         </picture>
         <p style="margin: 1.5rem 0 0; font-size: 0.85rem; color: var(--grey); font-style: italic;">
@@ -282,7 +287,7 @@
   <div class="container">
     <div class="anlass-row reverse">
       <picture>
-        <source srcset="/assets/img/werbeflaeche-rechts-1600.webp" type="image/webp">
+        <source media="(max-width: 800px)" srcset="/assets/img/werbeflaeche-rechts-800.webp" type="image/webp"><source media="(max-width: 800px)" srcset="/assets/img/werbeflaeche-rechts-800.jpg"><source srcset="/assets/img/werbeflaeche-rechts-1600.webp" type="image/webp">
         <img src="/assets/img/werbeflaeche-rechts-1600.jpg" alt="Werbefläche am Bus — 1,28 m × 1,28 m für Aussteller-Logo, Stand-Nummer oder Hashtag-Branding" class="anlass-image" loading="lazy">
       </picture>
       <div>
@@ -314,7 +319,7 @@
   <div class="container">
     <div class="anlass-row">
       <picture>
-        <source srcset="/assets/img/event-02-led-teppich-1600.webp" type="image/webp">
+        <source media="(max-width: 800px)" srcset="/assets/img/event-02-led-teppich-800.webp" type="image/webp"><source media="(max-width: 800px)" srcset="/assets/img/event-02-led-teppich-800.jpg"><source srcset="/assets/img/event-02-led-teppich-1600.webp" type="image/webp">
         <img src="/assets/img/event-02-led-teppich-1600.jpg" alt="Feuerwehr-Fotobus mit LED-Lichtleiste und rotem Teppich bei einer Abend-Veranstaltung" class="anlass-image" loading="lazy">
       </picture>
       <div>
@@ -346,7 +351,7 @@
   <div class="container">
     <div class="anlass-row reverse">
       <picture>
-        <source srcset="/assets/img/event-03-empfang-1600.webp" type="image/webp">
+        <source media="(max-width: 800px)" srcset="/assets/img/event-03-empfang-800.webp" type="image/webp"><source media="(max-width: 800px)" srcset="/assets/img/event-03-empfang-800.jpg"><source srcset="/assets/img/event-03-empfang-1600.webp" type="image/webp">
         <img src="/assets/img/event-03-empfang-1600.jpg" alt="Empfangs-Situation am Feuerwehr-Fotobus — passt visuell perfekt zu Tag der offenen Tür bei Polizei, Feuerwehr und Stadtverwaltung" class="anlass-image" loading="lazy">
       </picture>
       <div>
