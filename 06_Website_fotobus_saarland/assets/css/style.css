@@ -443,10 +443,16 @@ section { padding: 4rem 0; }
   position: relative;
   min-height: 80vh;
   background: linear-gradient(135deg, rgba(0,0,0,.30) 0%, rgba(227,6,19,.20) 100%),
-              url('../img/event-02-led-teppich-1600.jpg') center/cover no-repeat;
+              url('../img/event-02-led-teppich-800.jpg') center/cover no-repeat;
   color: var(--white);
   display: flex; align-items: center;
   padding: 6rem 0;
+}
+@media (min-width: 801px) {
+  .hero {
+    background-image: linear-gradient(135deg, rgba(0,0,0,.30) 0%, rgba(227,6,19,.20) 100%),
+                       url('../img/event-02-led-teppich-1600.jpg');
+  }
 }
 .hero h1 { color: var(--white); margin-bottom: 1rem; }
 .hero .lead { color: rgba(255,255,255,.9); font-size: 1.35rem; margin-bottom: 2rem; max-width: 640px; }

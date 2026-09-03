@@ -40,8 +40,8 @@
 
 
 <!-- Hero-Bild preloaden (LCP-Optimierung) -->
-<link rel="preload" as="image" href="/assets/img/event-02-led-teppich-1600.jpg" imagesrcset="/assets/img/event-02-led-teppich-1600.webp" type="image/webp">
-<link rel="preload" as="image" href="/assets/img/event-02-led-teppich-1600.jpg">
+<link rel="preload" as="image" href="/assets/img/event-02-led-teppich-800.jpg" media="(max-width: 800px)">
+<link rel="preload" as="image" href="/assets/img/event-02-led-teppich-1600.jpg" media="(min-width: 801px)">
 
 <link rel="stylesheet" href="/assets/css/style.css">
 
@@ -333,10 +333,15 @@
         <a href="/anlaesse#firma" class="btn btn-primary">→ Mehr zu Firmenfeiern</a>
       </div>
       <div>
-        <video controls preload="metadata" poster="/assets/img/firmenfeier-by-schulz-stimmung-poster-1600.jpg" style="width: 100%; border-radius: 8px; display: block; background: black; aspect-ratio: 16/9; object-fit: cover; box-shadow: 0 12px 32px rgba(0,0,0,0.5);">
-          <source src="/assets/video/firmenfeier-by-schulz-stimmung.mp4" type="video/mp4">
-          Ihr Browser unterstützt kein HTML5-Video.
-        </video>
+        <button class="video-card" data-video="/assets/video/firmenfeier-by-schulz-stimmung.mp4" data-poster="/assets/img/firmenfeier-by-schulz-stimmung-poster-1600.jpg" data-caption="Firmengründer Schulz mit Gästen — 25-Jahre-Jubiläum" aria-label="Video abspielen: Stimmung bei der Firmenfeier" style="width: 100%; box-shadow: 0 12px 32px rgba(0,0,0,0.5);">
+          <picture>
+            <source srcset="/assets/img/firmenfeier-by-schulz-stimmung-poster-800.webp" type="image/webp">
+            <img src="/assets/img/firmenfeier-by-schulz-stimmung-poster-800.jpg" alt="Vorschau: Stimmung im Bus beim 25-Jahre-Jubiläum von Firmengründer Schulz" loading="lazy">
+          </picture>
+          <div class="video-card-overlay">
+            <span class="video-play">▶</span>
+          </div>
+        </button>
       </div>
     </div>
   </div>
