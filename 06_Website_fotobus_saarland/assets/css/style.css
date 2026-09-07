@@ -548,6 +548,24 @@ section { padding: 4rem 0; }
   position: absolute; left: 0;
   color: var(--red); font-weight: bold;
 }
+.price-card li.li-limit::before {
+  content: '△';
+  color: var(--grey);
+  font-size: 0.85em;
+  top: 0.15em;
+}
+.price-card.is-new {
+  position: relative;
+}
+.price-card.is-new::before {
+  content: 'Neu · Einstieg';
+  position: absolute;
+  top: -12px; left: 50%; transform: translateX(-50%);
+  background: var(--dark); color: white;
+  padding: 0.25rem 1rem; border-radius: 999px;
+  font-size: 0.75rem; font-weight: 800; text-transform: uppercase;
+  white-space: nowrap;
+}
 
 /* ----- 13. Formular ----- */
 .form-grid {

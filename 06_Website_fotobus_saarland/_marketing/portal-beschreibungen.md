@@ -38,7 +38,7 @@ Für Portale mit vollem Freitextfeld "Über uns"/"Beschreibung" (z. B. weddix, h
 >
 > Bis zu 12 Personen passen gemütlich mit ins Bild, der Ausdruck vor Ort dauert nur 12 Sekunden. Zur Ausstattung gehören ein silbernes Absperrsystem mit rotem Teppich für den VIP-Empfang, ein Glitzer-Vorhang (Standard Rot, auf Wunsch in Silber, Gold, Weiß oder Schwarz) sowie eine Vielzahl an Foto-Requisiten. Aufbau und Betreuung übernehmen wir komplett — Sie und Ihre Gäste müssen sich um nichts kümmern.
 >
-> Buchbar für Hochzeit, Firmenfeier, Mitarbeiterevent, Messe, Tag der offenen Tür sowie Stadt- und Vereinsfeste im Saarland und im Umkreis von rund 200 km (u. a. Saarbrücken, Trier, Luxemburg, Kaiserslautern, Frankfurt, Mainz). Pakete ab 949 € für den 5-Stunden-Einsatz.
+> Buchbar für Hochzeit, Firmenfeier, Mitarbeiterevent, Messe, Tag der offenen Tür sowie Stadt- und Vereinsfeste im Saarland und im Umkreis von rund 200 km (u. a. Saarbrücken, Trier, Luxemburg, Kaiserslautern, Frankfurt, Mainz). Pakete ab 750 € für das 3-Stunden-Schnupperpaket (Nahbereich Saarbrücken), ab 949 € für den 5-Stunden-Einsatz.
 >
 > 📞 0800 80 44 200 · ✉️ office@fotobus.saarland · 🌐 fotobus.saarland
 
@@ -54,7 +54,7 @@ Wenn ein Portal ausschließlich Hochzeiten anspricht (z. B. weddix, hochzeitswah
 >
 > Statt einer gewöhnlichen Fotobox holen wir ein original Feuerwehr-Mercedes zu Ihrer Hochzeit — innen komplett zur Profi-Fotobox umgebaut, seit 2015 im Einsatz als Saarlands erster Feuerwehr-Fotobus. Ihre Gäste steigen ein, posieren zu fünft oder zu zwölft vor der Kamera und halten Sekunden später den fertigen Sofortprint (12 Sekunden Druckzeit) in der Hand — mit rotem Teppich, Glitzer-Vorhang und einer großen Auswahl an Foto-Requisiten für die passende Stimmung.
 >
-> Ein Hingucker, über den Ihre Hochzeitsgesellschaft noch lange spricht — und ein Erinnerungsstück, das jeder Gast direkt mit nach Hause nimmt. Mietbar im Saarland und Umkreis (bis 200 km), Pakete ab 949 €.
+> Ein Hingucker, über den Ihre Hochzeitsgesellschaft noch lange spricht — und ein Erinnerungsstück, das jeder Gast direkt mit nach Hause nimmt. Mietbar im Saarland und Umkreis (bis 200 km), Pakete ab 949 € (Schnupperpaket ab 750 € im Nahbereich Saarbrücken).
 >
 > 📞 0800 80 44 200 · ✉️ office@fotobus.saarland · 🌐 fotobus.saarland
 
@@ -72,7 +72,7 @@ Wichtige zweite Zielgruppe neben Hochzeiten: Firmen, die 1x jährlich ein Firmen
 >
 > Bis zu 12 Personen passen gemeinsam ins Bild — ideal, wenn ganze Abteilungen oder Familien mit Kindern zusammen posieren wollen. Der Sofortprint ist nach 12 Sekunden fertig, silbernes Absperrsystem mit rotem Teppich und eine große Auswahl an Foto-Requisiten sorgen für Stimmung bei Jung und Alt. Aufbau, Betreuung während der Veranstaltung und Abbau übernehmen wir komplett, Abrechnung bequem per Rechnung — Sie müssen sich um nichts kümmern.
 >
-> Buchbar für Firmenfeiern, Betriebsfeste, Familientage, Tag der offenen Tür, Jubiläen, Messen und B2B-Events im Saarland und im Umkreis von 200 km. Pakete ab 949 € für den 5-Stunden-Einsatz, 1.399 € für das 8-Stunden-Tagesevent.
+> Buchbar für Firmenfeiern, Betriebsfeste, Familientage, Tag der offenen Tür, Jubiläen, Messen und B2B-Events im Saarland und im Umkreis von 200 km. Pakete ab 750 € für das 3-Stunden-Schnupperpaket (Nahbereich Saarbrücken), 949 € für den 5-Stunden-Einsatz, 1.399 € für das 8-Stunden-Tagesevent.
 >
 > 📞 0800 80 44 200 · ✉️ office@fotobus.saarland · 🌐 fotobus.saarland
 
