@@ -72,7 +72,7 @@ Wichtige zweite Zielgruppe neben Hochzeiten: Firmen, die 1x jährlich ein Firmen
 >
 > Bis zu 12 Personen passen gemeinsam ins Bild — ideal, wenn ganze Abteilungen oder Familien mit Kindern zusammen posieren wollen. Der Sofortprint ist nach 12 Sekunden fertig, silbernes Absperrsystem mit rotem Teppich und eine große Auswahl an Foto-Requisiten sorgen für Stimmung bei Jung und Alt. Aufbau, Betreuung während der Veranstaltung und Abbau übernehmen wir komplett, Abrechnung bequem per Rechnung — Sie müssen sich um nichts kümmern.
 >
-> Buchbar für Firmenfeiern, Betriebsfeste, Familientage, Tag der offenen Tür, Jubiläen, Messen und B2B-Events im Saarland und im Umkreis von 200 km. Pakete ab 949 € für den 5-Stunden-Eventabend, 1.590 € für das 8-Stunden-Tagesevent.
+> Buchbar für Firmenfeiern, Betriebsfeste, Familientage, Tag der offenen Tür, Jubiläen, Messen und B2B-Events im Saarland und im Umkreis von 200 km. Pakete ab 949 € für den 5-Stunden-Eventabend, 1.399 € für das 8-Stunden-Tagesevent.
 >
 > 📞 0800 80 44 200 · ✉️ office@fotobus.saarland · 🌐 fotobus.saarland
 
