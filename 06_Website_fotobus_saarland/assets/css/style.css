@@ -566,6 +566,38 @@ section { padding: 4rem 0; }
   font-size: 0.75rem; font-weight: 800; text-transform: uppercase;
   white-space: nowrap;
 }
+.price-card.winter-offer {
+  position: relative;
+}
+.price-card.winter-offer::after {
+  content: '❄️ Winter-Special';
+  position: absolute;
+  top: 14px; right: 14px;
+  background: var(--dark); color: white;
+  padding: 0.35rem 0.85rem; border-radius: 999px;
+  font-size: 0.72rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.03em;
+  box-shadow: 0 2px 8px rgba(0,0,0,.25);
+  white-space: nowrap;
+  z-index: 2;
+}
+.price-card .price-old {
+  display: block;
+  font-size: 1.15rem; font-weight: 600;
+  color: var(--grey);
+  text-decoration: line-through;
+  margin-bottom: 0.1rem;
+}
+.price-card .winter-note {
+  background: var(--light);
+  border-left: 3px solid var(--dark);
+  border-radius: 4px;
+  padding: 0.6rem 0.85rem;
+  font-size: 0.82rem; color: var(--dark);
+  margin: 0 0 1.25rem;
+  line-height: 1.4;
+  text-align: left;
+}
 
 /* ----- 13. Formular ----- */
 .form-grid {
