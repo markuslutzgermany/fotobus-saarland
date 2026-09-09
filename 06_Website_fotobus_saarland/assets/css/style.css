@@ -569,34 +569,26 @@ section { padding: 4rem 0; }
 .price-card.winter-offer {
   position: relative;
 }
-/* Winter-Special: schräges Badge rechts neben dem Preis (statt über dem Bild) */
+/* Winter-Special: transparenter 45°-Schriftzug rechts, auf Höhe zwischen Alt- und Neupreis */
 .price-card.winter-offer .price {
   position: relative;
-  padding-right: 6.4rem;
 }
 .price-card.winter-offer .price::after {
   content: '❄️ Winter-Special';
   position: absolute;
-  top: 50%; right: -0.4rem;
-  transform: translateY(-50%) rotate(-8deg);
-  background: rgba(60, 60, 60, 0.14);
-  border: 1px solid rgba(60, 60, 60, 0.22);
-  color: var(--dark);
-  padding: 0.35rem 0.6rem; border-radius: 5px;
-  font-size: 0.66rem; font-weight: 800; text-transform: uppercase;
-  letter-spacing: 0.03em;
+  top: 2rem; right: -0.5rem;
+  transform: translateY(-50%) rotate(-45deg);
+  transform-origin: center;
+  color: rgba(45, 45, 45, 0.34);
+  font-size: 0.72rem; font-weight: 800; text-transform: uppercase;
+  letter-spacing: 0.04em;
   line-height: 1.2;
   white-space: nowrap;
+  pointer-events: none;
   z-index: 2;
 }
 @media (max-width: 700px) {
-  .price-card.winter-offer .price { padding-right: 0; }
-  .price-card.winter-offer .price::after {
-    position: static;
-    display: inline-block;
-    transform: rotate(-8deg);
-    margin-top: 0.6rem;
-  }
+  .price-card.winter-offer .price::after { font-size: 0.62rem; right: -0.2rem; }
 }
 .price-card .price-old {
   display: block;
