@@ -577,7 +577,7 @@ section { padding: 4rem 0; }
   content: '❄️ Winter-Special';
   position: absolute;
   top: 2rem; right: -0.5rem;
-  transform: translateY(-50%) rotate(-45deg);
+  transform: translateY(-50%) rotate(45deg);
   transform-origin: center;
   color: rgba(45, 45, 45, 0.34);
   font-size: 0.72rem; font-weight: 800; text-transform: uppercase;
